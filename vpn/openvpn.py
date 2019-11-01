@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Implements interface to OpenVPN client.
+Provides interface to OpenVPN client.
 """
 
 __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
@@ -11,7 +11,7 @@ from vpn import VPN
 
 class OpenVPN(VPN):
     """
-    Implements interface to OpenVPN client.
+    Provides interface to OpenVPN client.
     """
     # Default Open VPN client
     _default_driver = 'openvpn-gui'

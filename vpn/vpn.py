@@ -15,12 +15,6 @@ class VPN:
     This class provides methods to connect and disconnect to/from VPN using command line.
     """
     
-    # Command line to connect to VPN
-    _connect = str
-    
-    # Command line to disconnect from VPN
-    _disconnect = str
-    
     def __init__(self, driver: str, config: str):
         """
         Initializes VPN client.
@@ -29,6 +23,8 @@ class VPN:
         """
         self._driver = driver
         self._app = None 
+        self._connect = str  # Command line to connect to VPN
+        self._disconnect = str  # Command line to disconnect from VPN
 
         if config:
             with open(config) as _config:
