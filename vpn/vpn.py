@@ -30,8 +30,8 @@ class VPN:
             with open(config) as _config:
                 _attribs = _config.readlines()
 
-            for attrib in _attribs:
-                name, value = attrib.split('=')
+            for _attrib in _attribs:
+                name, value = _attrib.split('=')
                 setattr(self, name.strip(), value.strip())
 
     def connect(self):
