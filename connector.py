@@ -4,7 +4,7 @@
 Abstract GUI implementation for custom connectors
 """
 
-__author__ = 'Alexey Elizarov (alexey.elizarov@gmail.com)'
+__author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
 
 from tkinter import ttk

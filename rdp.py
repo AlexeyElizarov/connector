@@ -1,7 +1,16 @@
+# -*- coding: utf-8 -*-
+
+"""
+Implements interface to  RDP (Remote Desktop Protocol). Allows to open and close RDP from within command line.
+"""
+
+__author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
+
 from subprocess import Popen
 
+
 class RDP:
-    """ This is a wrapper class for Remote Desktop Protocol """
+    """ This is a class for Remote Desktop Protocol """
 
     # A default path to RDP
     _DEFAULT_DRIVER = 'mstsc.exe'
