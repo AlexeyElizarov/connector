@@ -1,20 +1,26 @@
+# -*- coding: utf-8 -*-
+
 """
-GUI implementation for Connectors package
+Abstract GUI implementation for custom connectors
 """
+
 __author__ = 'Alexey Elizarov (alexey.elizarov@gmail.com)'
-__version__ = '0.1'
+
 
 from tkinter import ttk
 from abc import ABC, abstractmethod
 
 
 class Connector(ABC):
-    """Abstract class for Connector GUI"""
+    """
+    Abstract class for Connector GUI
+    """
+
+    _padx = 2
+    _pady = 2
+
     def __init__(self, root):
         self.root = root
-
-        padx = 2
-        pady = 2
 
         self.root.title('Connector')
         self.root.resizable(0, 0)
@@ -27,9 +33,9 @@ class Connector(ABC):
         self.btn_close = ttk.Button(self.frm_controls, text='Close')
 
         self.frm_controls.pack(expand=True, fill='x')
-        self.btn_connect.pack(side='left', padx=padx, pady=pady)
-        self.btn_close.pack(side='right', padx=padx, pady=pady)
-        self.btn_disconnect.pack(side='right', padx=padx, pady=pady)
+        self.btn_connect.pack(side='left', padx=self._padx, pady=self._pady)
+        self.btn_close.pack(side='right', padx=self._padx, pady=self._pady)
+        self.btn_disconnect.pack(side='right', padx=self._padx, pady=self._pady)
 
         self.btn_connect['command'] = self.connect
         self.btn_disconnect['command'] = self.disconnect
@@ -37,13 +43,25 @@ class Connector(ABC):
 
     @abstractmethod
     def connect(self):
+        """
+        Abstract method to connect.
+        :return: None
+        """
         pass
 
     @abstractmethod
     def disconnect(self):
+        """
+        Abstract method to disconnect.
+        :return: None
+        """
         pass
 
     def close(self):
+        """
+        Disconnects and closes application.
+        :return: None
+        """
         try:
             self.disconnect()
         except:
@@ -52,12 +70,19 @@ class Connector(ABC):
             self.root.quit()
 
     def switch_states(self):
+        """
+        Switches states of the Connect button.
+        :return: None
+        """
         state = self.btn_connect['state']
         self.btn_connect['state'] = self.btn_disconnect['state']
         self.btn_disconnect['state'] = state
 
 
 class TestGUI(Connector):
+    """
+    Test GUI implementation of the Connector.
+    """
     def connect(self):
         print('connect')
 
