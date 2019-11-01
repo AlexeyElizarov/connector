@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 """
-Implements interface to  RDP (Remote Desktop Protocol). Allows to open and close RDP from within command line.
+Provides interface to  RDP (Remote Desktop Protocol). Allows to open and close RDP from within command line.
 """
 
 __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
