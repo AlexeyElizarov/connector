@@ -112,8 +112,8 @@ class SAPGUI(SAP):
         self._app = Application(backend='win32').connect(path=self._saplogon)
 
         # If SAP application server is reachable, terminate all SAP GUI windows.
-        if self.is_reachable:
-            while self._windows:
+        if self.is_reachable and not self.is_closed:
+            while not self.is_closed:
                 for window in self._windows:
                     self._terminate(window.handle)
 
