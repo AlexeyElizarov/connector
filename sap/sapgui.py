@@ -67,8 +67,7 @@ class SAPGUI(SAP):
         """
 
         if getattr(self, 'server'):
-            ip = getattr(self, 'server').split(':')[0]
-            response = Popen("ping -n 1 " + ip, shell=True)
+            response = Popen("ping -n 1 " + self.hostname, shell=True)
             response.wait()
             if response.poll() == 0:
                 return True

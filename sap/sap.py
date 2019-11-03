@@ -36,6 +36,9 @@ class SAP:
         
         for key, value in service.items():
             setattr(self, key, value)
+            
+        self.hostname, self.port = getattr(self, 'server').split(':')
+        self.sysnr = self.port[2:]
 
         
         
