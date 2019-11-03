@@ -17,7 +17,6 @@ class SAPGUI(SAP):
     """
     This is a class for SAP GUI.
     The class provides method to open SAP GUI using command line and close SAP GUI using SAP command line.
-    To use a default driver, a path to the sapshcut.exe must be added to the system PATH parameter.
     """
 
     # Get location of SAP Shortcut
