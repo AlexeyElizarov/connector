@@ -6,38 +6,35 @@ Provides GUI interface to SAP backend system.
 
 __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
+from sap import SAP
 from subprocess import Popen
 from time import sleep
 from pywinauto.application import Application
+from winreg import OpenKey, QueryValueEx, HKEY_LOCAL_MACHINE
 
 
-class SAPGUI:
+class SAPGUI(SAP):
     """
     This is a class for SAP GUI.
     The class provides method to open SAP GUI using command line and close SAP GUI using SAP command line.
     To use a default driver, a path to the sapshcut.exe must be added to the system PATH parameter.
     """
 
-    # A default path to the SAP GUI driver (sapshcut.exe)
-    _DEFAULT_DRIVER = r'C:\Program Files (x86)\SAP\FrontEnd\SAPgui\sapshcut.exe'
-    # A default path to the SAP Logon executable
-    _PATH = 'saplogon.exe'
+    # Get location of SAP Shortcut
+    with OpenKey(HKEY_LOCAL_MACHINE, r'SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\sapshcut.exe') as key:
+        _sapshcut = QueryValueEx(key, r'')[0]
 
-    def __init__(self, driver: str = _DEFAULT_DRIVER, config: str = ''):
+    # SAP Logon executable
+    _saplogon = 'saplogon.exe'
+
+    def __init__(self, service_name):
         """
         The constructor for the SAPGUI class
-        :param driver: a path to a sapshcut binary.
+        :param service_name: Service name as it is presented in SAP Logon.
         """
-        self._driver = driver
+
+        SAP.__init__(self, service_name)
         self._app = None
-        self._params = self._read_config(config)
-        self._app_server = self._params.get('app_server')
-        self._system = self._params.get('system')
-        self._client = self._params.get('client')
-        self._sysname = self._params.get('sysname')
-        self._user = self._params.get('user')
-        self._pw = self._params.get('pw')
-        self._language = self._params.get('language')
 
     @property
     def _windows(self):
@@ -47,7 +44,7 @@ class SAPGUI:
         """
 
         try:
-            windows = self._app.windows(title_re='SAP Easy Access.*') + self._app.windows(title='SAP')
+            windows = self._app.windows(class_name='SAP_FRONTEND_SESSION')
             return windows
         except:
             return []
@@ -69,45 +66,52 @@ class SAPGUI:
         Checks if SAP application server is reachable.
         :return: Returns True if SAP application server is reachable. Else - False.
         """
-        if self._app_server:
-            response = Popen("ping -n 1 " + self._app_server, shell=True)
+
+        if getattr(self, 'server'):
+            ip = getattr(self, 'server').split(':')[0]
+            response = Popen("ping -n 1 " + ip, shell=True)
             response.wait()
             if response.poll() == 0:
                 return True
         return False
 
-    def open(self):
+    def open(self, client: str, user: str = None, pw: str = None,  language: str = None):
         """
-        Opens SAP GUI session using command line.
+        Opens SAP GUI instance using command line.
+        :param client: SAP backend client number
+        :param user: User name
+        :param pw: Password
+        :param language: Logon language
         :return: None
         """
 
         # Compose command line
-        command = f'"{self._driver}" -system={self._system} -client={self._client} -sysname="{self._sysname}"'
+        command = f'"{self._sapshcut}" -system={getattr(self, "server")} -client={client} -sysname="{getattr(self, "name")}"'
 
         # If user supplied, add -user parameter to the command line
-        if self._user:
-            command += f' -user={self._user}'
+        if user:
+            command += f' -user={user}'
 
         # If password supplied, add -pw parameter to the command line
-        if self._pw:
-            command += f' -pw={self._pw}'
-
+        if pw:
+            command += f' -pw={pw}'
+             #
         # If language supplied, add -language parameter to the command line
-        if self._language:
-            command += f' -language={self._language}'
+        if language:
+            command += f' -language={language}'
 
         # Open SAP GUI instance
         Popen(command)
-
-        # Connect to SAP GUI application instance
-        self._app = Application(backend='win32').connect(path=self._PATH)
 
     def close(self):
         """
         Closes SAP GUI windows.
         :return: None
-        """
+        """      
+
+        # Connect to SAP GUI application instance
+        self._app = Application(backend='win32').connect(path=self._saplogon)
+
         # If SAP application server is reachable, terminate all SAP GUI windows.
         if self.is_reachable:
             while self._windows:
@@ -125,23 +129,5 @@ class SAPGUI:
             edit.type_keys('/nex')
             edit.type_keys('{ENTER}')
             sleep(1)
-        except:
+        except Exception:
             pass
-
-    @staticmethod
-    def _read_config(file):
-        """
-        Reads configuration file.
-        :param file: Path to configuration file.
-        :return: Dictionary of configuration parameters.
-        """
-        params = {}
-
-        with open(file) as f:
-            config = f.readlines()
-
-        for line in config:
-            param, value = line.split('=')
-            params[param.strip()] = value.strip()
-
-        return params
