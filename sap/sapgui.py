@@ -33,7 +33,17 @@ class SAPGUI(SAP):
         """
 
         SAP.__init__(self, service_name)
-        self._app = None
+
+    @property
+    def _app(self):
+        """
+        # Connection to SAP GUI application instance
+        :return: Connection to SAP GUI application instance
+        """
+        try:
+            return Application(backend='win32').connect(path=self._saplogon)
+        except Exception:
+            return None
 
     @property
     def _windows(self):
@@ -106,9 +116,6 @@ class SAPGUI(SAP):
         Closes SAP GUI windows.
         :return: None
         """      
-
-        # Connect to SAP GUI application instance
-        self._app = Application(backend='win32').connect(path=self._saplogon)
 
         # If SAP application server is reachable, terminate all SAP GUI windows.
         if self.is_reachable and not self.is_closed:

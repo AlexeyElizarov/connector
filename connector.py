@@ -8,6 +8,7 @@ __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
 
 from tkinter import ttk
+from tkinter import Tk
 from abc import ABC, abstractmethod
 
 
@@ -19,14 +20,14 @@ class Connector(ABC):
     _padx = 2
     _pady = 2
 
-    def __init__(self, root):
-        self.root = root
+    def __init__(self):
+        self.root = Tk()
 
         self.root.title('Connector')
         self.root.resizable(0, 0)
-        self.root.minsize(300, root.winfo_height())
+        self.root.minsize(300, self.root.winfo_height())
 
-        self.frm_controls = ttk.Frame(root)
+        self.frm_controls = ttk.Frame(self.root)
         self.btn_connect = ttk.Button(self.frm_controls, text='Connect')
         self.btn_disconnect = ttk.Button(self.frm_controls, text='Disconnect')
         self.btn_disconnect['state'] = 'disabled'
@@ -64,7 +65,7 @@ class Connector(ABC):
         """
         try:
             self.disconnect()
-        except:
+        except Exception:
             pass
         finally:
             self.root.quit()
@@ -78,6 +79,9 @@ class Connector(ABC):
         self.btn_connect['state'] = self.btn_disconnect['state']
         self.btn_disconnect['state'] = state
 
+    def run(self):
+        self.root.mainloop()
+
 
 class TestGUI(Connector):
     """
@@ -85,6 +89,8 @@ class TestGUI(Connector):
     """
     def connect(self):
         print('connect')
+        self.switch_states()
 
     def disconnect(self):
         print('disconnect')
+        self.switch_states()
