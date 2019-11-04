@@ -15,7 +15,7 @@ class VPN:
     This class provides methods to connect and disconnect to/from VPN using command line.
     """
     
-    def __init__(self, driver: str, config: str):
+    def __init__(self, driver: str = None, config: str = None):
         """
         Initializes VPN client.
         :param driver: A path to a VPN client executable.

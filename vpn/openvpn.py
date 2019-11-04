@@ -15,9 +15,10 @@ class OpenVPN(VPN):
     """
     # Default Open VPN client
     _default_driver = 'openvpn-gui'
+    _default_config = None
 
-    def __init__(self, _default_driver, config):
-        VPN.__init__(self, _default_driver, config)
+    def __init__(self, driver=_default_driver, config=_default_config):
+        VPN.__init__(self, driver, config)
         self._connect = f'"{self._driver}" --connect {getattr(self, "config")}'
         self._disconnect = ['taskkill.exe /F /IM openvpn.exe',
                             'taskkill.exe /F /IM openvpn-gui.exe']
