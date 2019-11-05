@@ -7,9 +7,6 @@ Abstract GUI implementation for custom connectors
 __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
 
-# TODO: add RSA Security GUI feature
-# TODO: - limit security id entry - number of chars
-# TODO: - limit security id entry - only numerical
 # TODO: add log GUI feature
 # TODO: implement ttk styles for padding
 
