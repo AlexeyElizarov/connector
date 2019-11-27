@@ -4,3 +4,4 @@ from widgets.rsa import LFrRSA
 from widgets.validating_entry import EntValidating
 from widgets.security_id_entry import EntSecurityId
 from widgets.log import FrmLog
+from widgets.logger import TextHandler

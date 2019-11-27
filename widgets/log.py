@@ -27,18 +27,3 @@ class FrmLog(ttk.Frame):
         self.stx_log = ScrolledText(self, state='disabled')
         self.stx_log.configure(font='TkFixedFont')
         self.stx_log.pack(padx=self._padx, pady=self._pady)
-
-        # Create textLogger
-        text_handler = TextHandler(self.stx_log)
-
-        # Logging configuration
-        logging.basicConfig(filename='test.log',
-                            level=logging.INFO,
-                            format='%(asctime)s - %(levelname)s - %(message)s')
-
-        # Add the handler to logger
-        logger = logging.getLogger()
-        logger.addHandler(text_handler)
-
-
-
