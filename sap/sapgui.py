@@ -93,8 +93,11 @@ class SAPGUI(SAP):
         :return: None
         """
 
+        system = getattr(self, 'server').split(':')[0]
+        name = getattr(self, 'name')
+
         # Compose command line
-        command = f'"{self._sapshcut}" -system={getattr(self, "server")} -client={client} -sysname="{getattr(self, "name")}"'
+        command = f'"{self._sapshcut}" -system={system} -client={client} -sysname="{name}"'
 
         # If user supplied, add -user parameter to the command line
         if user:
