@@ -33,4 +33,4 @@ class SAPRFC(SAP):
         params = dict(client=client, user=user, passwd=pw, lang=language, ashost=self.hostname, sysnr=self.sysnr)
 
         return Connection(**params)
-    
+

@@ -61,6 +61,14 @@ class Connector(ABC):
         # logger = logging.getLogger()
         # logger.addHandler(text_handler)
 
+    @staticmethod
+    def switch(func):
+        def switcher(*args):
+            self = args[0]
+            func(self)
+            self.controls.switch()
+        return switcher
+
     @abstractmethod
     def connect(self):
         """
@@ -110,18 +118,27 @@ class TestGUI(Connector):
     """
     Test GUI implementation of the Connector.
     """
+
+    @Connector.switch
     def connect(self):
-        t1 = threading.Thread(target=self.connect, args=[])
-        self.log_threads.append(t1)
-        logging.info('Connecting')
+        pass
 
-        sleep(3)
-        self.controls.switch()
-        logging.info('Connected')
-
+    @Connector.switch
     def disconnect(self):
-        t2 = threading.Thread(target=self.disconnect, args=[])
-        self.log_threads.append(t2)
-        logging.info('Disconnect')
-        sleep(3)
-        self.controls.switch()
+        pass
+
+    # def connect(self):
+    #     t1 = threading.Thread(target=self.connect, args=[])
+    #     self.log_threads.append(t1)
+    #     logging.info('Connecting')
+    #
+    #     sleep(3)
+    #     self.controls.switch()
+    #     logging.info('Connected')
+    #
+    # def disconnect(self):
+    #     t2 = threading.Thread(target=self.disconnect, args=[])
+    #     self.log_threads.append(t2)
+    #     logging.info('Disconnect')
+    #     sleep(3)
+    #     self.controls.switch()
