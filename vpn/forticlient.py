@@ -20,7 +20,8 @@ class FortiClient:
 
     _default_driver = r'C:\Program Files\Fortinet\FortiClient\FortiClient.exe'
 
-    def __init__(self):
+    def __init__(self, vpn_name):
+        self.vpn_name = vpn_name
         self._app = None
         self._is_connected = False
         self._chrome_options = Options()
@@ -42,32 +43,32 @@ class FortiClient:
         """
         if self._app:
             self._app.quit()
-            del self._app
+            self._app = None
 
-    def connect(self, vpn_name, username, password):
+    def connect(self, username, password):
         """
         Connects to VPN with given VPN name, user and password.
         :param vpn_name: VPN name
         :param username: username
         :param password: password
-        :return:
+        :return: None
         """
-
         self._app.find_element_by_id('vpn-sidebar').click()
 
         for i in range(5):
             try:
                 vpn_names = Select(self._app.find_element_by_id('vpn-connection'))
-                vpn_names.select_by_visible_text(vpn_name)
+                vpn_names.select_by_visible_text(self.vpn_name)
                 username_input = self._app.find_element_by_id('vpn-username')
                 username_input.clear()
                 username_input.send_keys(username)
                 self._app.find_element_by_id('vpn-password').send_keys(password)
             except Exception as e:
                 print(e)
-                sleep(i)
+                sleep(1)
                 continue
             else:
+                sleep(1)
                 self._app.find_element_by_id('vpn-connect-button').click()
                 self._is_connected = True
                 break
@@ -75,7 +76,7 @@ class FortiClient:
     def disconnect(self):
         """
         Disconnects from VPN.
-        :return:
+        :return: None
         """
         if self._is_connected:
             self._app.find_element_by_id('vpn-disconnect-button').click()
