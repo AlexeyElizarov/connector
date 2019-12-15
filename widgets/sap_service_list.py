@@ -18,7 +18,7 @@ class LBxSAPService(Listbox):
     _pady = 2
 
     def __init__(self, root, services: list = None):
-        Listbox.__init__(self, root, width=50)
+        super().__init__(root, width=50)
 
         if services:
             for service in services:
