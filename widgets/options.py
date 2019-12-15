@@ -1,5 +1,6 @@
 from tkinter import ttk
 from widgets.rsa import LFrRSA
+from widgets.saplogon import LFrSAPLogon
 
 
 class FrmOptions(ttk.Frame):
@@ -16,3 +17,7 @@ class FrmOptions(ttk.Frame):
         if options.get('rsa'):
             self.rsa = LFrRSA(self)
             self.rsa.pack(expand=True, fill='x', padx=self._padx, pady=self._pady)
+
+        if options.get('saplogon'):
+            self.saplogon = LFrSAPLogon(self, options.get('saplogon'))
+            self.saplogon.pack(expand=True, fill='x', padx=self._padx, pady=self._pady)
