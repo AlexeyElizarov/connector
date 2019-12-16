@@ -6,10 +6,6 @@ Abstract GUI implementation for custom connectors
 
 __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
-# TODO: implement ttk styles for padding
-# TODO: add SAP service selection feature
-# TODO: connect by ENTER
-# TODO: RSA - disable connect (raise pop-up) if security key is not entered.
 
 from tkinter import Tk
 from abc import ABC, abstractmethod
@@ -31,16 +27,24 @@ class Connector(ABC):
         self.root.resizable(0, 0)
         self.root.minsize(300, self.root.winfo_height())
 
+        # Initialization of widgets
         self.options = FrmOptions(self.root, **options)
         self.controls = FrmControls(self.root)
 
+        # Geometry management
         self.options.pack(expand=True, fill='x')
         self.controls.pack(expand=True, fill='x')
 
+        # Commands and bindings
         self.controls.btn_connect['command'] = self.connect
         self.controls.btn_disconnect['command'] = self.disconnect
         self.controls.btn_close['command'] = self.close
 
+        if options.get('saplogon'):
+            self.options.saplogon.lbx_sap_services.bind('<Double-Button-1>', self._connect)
+
+    def _connect(self, event):
+        self.connect()
 
     @staticmethod
     def switch(func):
@@ -80,7 +84,6 @@ class Connector(ABC):
 
     def run(self):
         self.root.mainloop()
-
 
     @staticmethod
     def read_config(file: str = ''):

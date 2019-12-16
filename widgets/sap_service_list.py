@@ -6,7 +6,7 @@ Implements SAP Service List Box
 
 __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
-from tkinter import Listbox, END
+from tkinter import Listbox, END, GROOVE
 
 
 class LBxSAPService(Listbox):
@@ -18,7 +18,7 @@ class LBxSAPService(Listbox):
     _pady = 2
 
     def __init__(self, root, services: list = None):
-        super().__init__(root, width=50)
+        super().__init__(root, width=50, relief=GROOVE, borderwidth=2, highlightthickness=0)
 
         if services:
             for service in services:

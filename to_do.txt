@@ -1,0 +1,9 @@
+TODO: SAP logon widget - connect by double click
+TODO: implement ttk styles for padding
+TODO: add SAP service selection feature
+TODO: connect by ENTER
+TODO: RSA - disable connect (raise pop-up) if security key is not entered.
+TODO: add status bar feature
+TODO: add log feature
+TODO: refactor SAP landscape - add base class for XML element
+TODO: refactor connector using MVC model

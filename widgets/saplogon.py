@@ -22,11 +22,16 @@ class LFrSAPLogon(ttk.LabelFrame):
     def __init__(self, root, node):
         super().__init__(root, text='SAP Logon')
 
+        self.root = root
         self.services = Landscape(node).services
-        self.lbx_sap_service = LBxSAPService(self, self.services)
-        self.lbx_sap_service.pack(side='left', padx=self._padx, pady=self._pady)
+        self.lbx_sap_services = LBxSAPService(self, self.services)
+        self.lbx_sap_services.pack(side='left', padx=self._padx, pady=self._pady)
 
     @property
     def selected_service(self):
-        return self.services[self.lbx_sap_service.curselection()[0]]
+        return self.services[self.lbx_sap_services.curselection()[0]]
+
+
+
+
 
