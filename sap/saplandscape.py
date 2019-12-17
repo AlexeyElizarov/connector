@@ -14,7 +14,7 @@ from lxml import etree
 
 class SAPLandscape:
     """
-    Provides interface to SAP Landscape settings.
+    Provides interface to SAP Landscape settings parsed from SAPUILandscape.xml.
     """
 
     # Get location of SAP UI Landscape
@@ -24,37 +24,51 @@ class SAPLandscape:
 
     def __init__(self, node_name):
 
-        # Get node by using noe name and set class attributes.
+        # Get node by using node name and set class attributes.
         tree = etree.parse(self._landscape)
         root = tree.getroot()
-        self.node = Node(root.xpath(f"//Node[@name='{node_name}']")[0])
+        node = Node(root.xpath(f"//Node[@name='{node_name}']")[0])
         self.services = []
 
-        for item in self.node.items:
+        # Get SAP services using their IDs.
+        for item in node.items:
             service = Service(root.xpath(f"//Service[@uuid='{getattr(item, 'serviceid')}']")[0])
             self.services.append(service)
 
 
-class Node:
+class Element:
+    """
+    Parent class for an XML element.
+    """
     def __init__(self, node):
-
         for key, value in node.items():
             setattr(self, key, value)
 
+
+class Node(Element):
+    """
+    Class for SAP Logon Node.
+    """
+    def __init__(self, node):
+        super().__init__(node)
+
+        # Get node items
         self.items = [Item(item) for item in node.findall('.//Item')]
 
 
-class Item:
-    def __init__(self, item):
+class Item(Element):
+    """
+    Class for SAP Logon node item.
+    """
+    pass
 
-        for key, value in item.items():
-            setattr(self, key, value)
 
-
-class Service:
-    def __init__(self, service):
-        for key, value in service.items():
-            setattr(self, key, value)
+class Service(Element):
+    """
+    Class for SAP services.
+    """
+    def __init__(self, node):
+        super().__init__(node)
 
         self.hostname, self.port = getattr(self, 'server').split(':')
         self.sysnr = self.port[2:]
