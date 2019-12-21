@@ -6,16 +6,16 @@ Provides GUI interface to SAP backend system.
 
 __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
-from sap import SAP
 from subprocess import Popen
 from time import sleep
 from pywinauto.application import Application
 from winreg import OpenKey, QueryValueEx, HKEY_LOCAL_MACHINE
 
 
-class SAPGUI(SAP):
+class SAPGUI:
     """
     This is a class for SAP GUI.
+    The main purpose of the class is to handle SAP GUI for a given SAP service.
     The class provides method to open SAP GUI using command line and close SAP GUI using SAP command line.
     """
 
@@ -26,13 +26,8 @@ class SAPGUI(SAP):
     # SAP Logon executable
     _saplogon = 'saplogon.exe'
 
-    def __init__(self, service_name):
-        """
-        The constructor for the SAPGUI class
-        :param service_name: Service name as it is presented in SAP Logon.
-        """
-
-        SAP.__init__(self, service_name)
+    def __init__(self, service):
+        self.service = service
 
     @property
     def _app(self):
@@ -69,47 +64,26 @@ class SAPGUI(SAP):
         else:
             return True
 
-    @property
-    def is_reachable(self):
-        """
-        Checks if SAP application server is reachable.
-        :return: Returns True if SAP application server is reachable. Else - False.
-        """
-
-        if getattr(self, 'server'):
-            response = Popen("ping -n 1 " + self.hostname, shell=True)
-            response.wait()
-            if response.poll() == 0:
-                return True
-        return False
-
-    def open(self, client: str, user: str = None, pw: str = None,  language: str = None):
+    def open(self):
         """
         Opens SAP GUI instance using command line.
-        :param client: SAP backend client number
-        :param user: User name
-        :param pw: Password
-        :param language: Logon language
         :return: None
         """
 
-        system = getattr(self, 'server').split(':')[0]
-        name = getattr(self, 'name')
-
         # Compose command line
-        command = f'"{self._sapshcut}" -system={system} -client={client} -sysname="{name}"'
+        command = f'"{self._sapshcut}" -system={self.service.hostname} -client={self.service.client} -sysname="{self.service.name}"'
 
         # If user supplied, add -user parameter to the command line
-        if user:
-            command += f' -user={user}'
+        if getattr(self.service, 'user', None):
+            command += f' -user={self.service.user}'
 
         # If password supplied, add -pw parameter to the command line
-        if pw:
-            command += f' -pw={pw}'
-             #
+        if getattr(self.service, 'password', None):
+            command += f' -pw={self.service.password}'
+
         # If language supplied, add -language parameter to the command line
-        if language:
-            command += f' -language={language}'
+        if getattr(self.service, 'language', None):
+            command += f' -language={self.service.language}'
 
         # Open SAP GUI instance
         Popen(command)
@@ -121,7 +95,7 @@ class SAPGUI(SAP):
         """      
 
         # If SAP application server is reachable, terminate all SAP GUI windows.
-        if self.is_reachable and not self.is_closed:
+        if not self.is_closed:
             while not self.is_closed:
                 for window in self._windows:
                     self._terminate(window.handle)

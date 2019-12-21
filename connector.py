@@ -42,6 +42,8 @@ class Connector(ABC):
 
         if options.get('saplogon'):
             self.options.saplogon.lbx_sap_services.bind('<Double-Button-1>', self._connect)
+        else:
+            self.root.bind('<Return>', self._connect)
 
     def _connect(self, event):
         self.connect()

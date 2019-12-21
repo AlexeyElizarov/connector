@@ -8,8 +8,10 @@ __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
 
 from winreg import OpenKey, QueryValueEx, HKEY_CURRENT_USER
+from subprocess import Popen
 from os import path
 from lxml import etree
+from sap import GUI, RFC
 
 
 class SAPLandscape:
@@ -72,3 +74,20 @@ class Service(Element):
 
         self.hostname, self.port = getattr(self, 'server').split(':')
         self.sysnr = self.port[2:]
+
+        self.gui = GUI(self)
+        self.rfc = RFC(self)
+
+    @property
+    def is_reachable(self):
+        """
+        Checks if SAP application server is reachable.
+        :return: Returns True if SAP application server is reachable. Else - False.
+        """
+
+        if getattr(self, 'server'):
+            response = Popen("ping -n 1 " + self.hostname, shell=True)
+            response.wait()
+            if response.poll() == 0:
+                return True
+        return False

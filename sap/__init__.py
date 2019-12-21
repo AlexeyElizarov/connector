@@ -1,4 +1,4 @@
-from sap.sap import SAP
-from sap.sapgui import SAPGUI
-from sap.saprfc import SAPRFC
+from sap.sapgui import SAPGUI as GUI
+from sap.saprfc import SAPRFC as RFC
 from sap.saplandscape import SAPLandscape as Landscape
+from sap.sapbase import SAP
