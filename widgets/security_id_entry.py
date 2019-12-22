@@ -12,8 +12,8 @@ from widgets.validating_entry import EntValidating
 
 class EntSecurityId(EntValidating):
 
-    def __init__(self, master, value: str = None, maxlength: int = None, **kw):
-        EntValidating.__init__(self, master, **kw)
+    def __init__(self, root, value: str = None, maxlength: int = None, **kw):
+        EntValidating.__init__(self, root, **kw)
         self.maxlength = maxlength
 
     def validate(self, value):

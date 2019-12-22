@@ -42,8 +42,23 @@ class Connector(ABC):
 
         if options.get('saplogon'):
             self.options.saplogon.lbx_sap_services.bind('<Double-Button-1>', self._connect)
+        elif options.get('rsa'):
+            pass
+            self.root.after(250, self.check_rsa_key)
         else:
             self.root.bind('<Return>', self._connect)
+
+    def check_rsa_key(self):
+        # print('checking rsa')
+        rsa_key = self.options.rsa.ent_security_id.get()
+        if len(rsa_key) == 6:
+            self.controls.btn_connect['state'] = 'enabled'
+            self.root.bind('<Return>', self._connect)
+        else:
+            self.controls.btn_connect['state'] = 'disabled'
+            self.root.unbind('<Return>')
+
+        self.root.after(250, self.check_rsa_key)
 
     def _connect(self, event):
         self.connect()
