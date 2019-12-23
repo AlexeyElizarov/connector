@@ -7,7 +7,7 @@ Taken from http://effbot.org/zone/tkinter-entry-validate.htm
 
 __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
-from widgets.validating_entry import EntValidating
+from connector.widgets.validating_entry import EntValidating
 
 
 class EntSecurityId(EntValidating):

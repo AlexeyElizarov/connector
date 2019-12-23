@@ -7,7 +7,7 @@ Implements RSA Security feature.
 __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
 from tkinter import ttk
-from widgets.security_id_entry import EntSecurityId
+from connector.widgets.security_id_entry import EntSecurityId
 
 
 class LFrRSA(ttk.LabelFrame):

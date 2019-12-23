@@ -1,10 +1,43 @@
-TODO: RSA - disable connect (raise pop-up) if security key is not entered.
-        - if key is not entered connect by enter should not work, connect button disabled
-        - if key kis less then 6 digits connect by enter should not work, connect button disabled
+TODO: refactor connector using MVC model
+
 TODO: add status bar feature
 TODO: add log feature
-TODO: refactor connector using MVC model
+
 TODO: set default pax, pady for pack geo manager:
         - impossible - use global variable
 TODO: implement subclass for saplogon based connectors
 TODO: SAP Service - ping with SAP router settings
+TODO: config management
+
+TODO: RSA - disable connect (raise pop-up) if security key is not entered.
+        - if key is not entered connect by enter should not work, connect button disabled
+        - if key kis less then 6 digits connect by enter should not work, connect button disabled
+
+
+
+
+----------------------
+TODO: refactor connector using MVC model
+
+Connector
+/
+model
+view
+controller
+
+main.pye
+
+model: params
+
+view - tk app
+
+Connector(Tk)
+
+
+
+
+controller - all logic
+
+Connector()
+
+
