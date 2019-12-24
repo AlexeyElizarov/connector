@@ -28,26 +28,12 @@ class Connector:
 
         if options.get('sap'):
             self.gui.options.saplogon.lbx_sap_services.bind('<Double-Button-1>', self._connect)
-        elif options.get('rsa'):
-            pass
-            self.gui.after(250, self.check_rsa_key)
         else:
             self.gui.bind('<Return>', self._connect)
-
-    def check_rsa_key(self):
-        # print('checking rsa')
-        rsa_key = self.gui.options.rsa.ent_security_id.get()
-        if len(rsa_key) == 6:
-            self.gui.controls.btn_connect['state'] = 'enabled'
-            self.gui.bind('<Return>', self._connect)
-        else:
-            self.gui.controls.btn_connect['state'] = 'disabled'
-            self.gui.unbind('<Return>')
-
-        self.gui.after(250, self.check_rsa_key)
 
     def _connect(self, event):
-        self.connect()
+        if self.gui.controls.btn_connect['state'] == 'enabled':
+            self.connect()
 
     @staticmethod
     def switch(func):
@@ -59,6 +45,7 @@ class Connector:
 
     @abstractmethod
     def connect(self):
+
         """
         Abstract method to connect.
         :return: None

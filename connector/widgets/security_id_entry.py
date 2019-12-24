@@ -14,6 +14,7 @@ class EntSecurityId(EntValidating):
 
     def __init__(self, root, value: str = None, maxlength: int = None, **kw):
         EntValidating.__init__(self, root, **kw)
+        self.controls = root.controls
         self.maxlength = maxlength
 
     def validate(self, value):
@@ -25,4 +26,12 @@ class EntSecurityId(EntValidating):
 
         if self.maxlength is None or len(value) <= self.maxlength:
             if value[-1:] in '0123456789':
+                if len(value) == self.maxlength:
+                    self.controls.btn_connect['state'] = 'enabled'
+
+                else:
+                    self.controls.btn_connect['state'] = 'disabled'
                 return value
+
+        # if len(value) == self.maxlength:
+

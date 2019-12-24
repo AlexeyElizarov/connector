@@ -1,4 +1,4 @@
-FIXME: SAP Logon double click
+TODO: refactor RSA connect feature validation
 
 TODO: add status bar feature
 TODO: add log feature

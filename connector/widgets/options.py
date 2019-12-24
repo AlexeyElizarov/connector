@@ -14,7 +14,7 @@ class FrmOptions(ttk.Frame):
     def __init__(self, root, model):
         ttk.Frame.__init__(self, root)
 
-        self.root = root
+        self.controls = root.controls
 
         if getattr(model, 'rsa', None):
             self.rsa = LFrRSA(self)

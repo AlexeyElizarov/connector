@@ -23,8 +23,8 @@ class ConnectorGUI(Tk):
         self.minsize(300, self.winfo_height())
 
         # Initialization of widgets
-        self.options = FrmOptions(self, model)
         self.controls = FrmControls(self)
+        self.options = FrmOptions(self, model)
 
         # Geometry management
         self.options.pack(expand=True, fill='x')
