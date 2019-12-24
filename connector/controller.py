@@ -26,7 +26,7 @@ class Connector:
         self.gui.controls.btn_disconnect['command'] = self.disconnect
         self.gui.controls.btn_close['command'] = self.close
 
-        if options.get('saplogon'):
+        if options.get('sap'):
             self.gui.options.saplogon.lbx_sap_services.bind('<Double-Button-1>', self._connect)
         elif options.get('rsa'):
             pass

@@ -1,4 +1,4 @@
-TODO: refactor connector using MVC model
+FIXME: SAP Logon double click
 
 TODO: add status bar feature
 TODO: add log feature
@@ -15,29 +15,5 @@ TODO: RSA - disable connect (raise pop-up) if security key is not entered.
 
 
 
-
-----------------------
-TODO: refactor connector using MVC model
-
-Connector
-/
-model
-view
-controller
-
-main.pye
-
-model: params
-
-view - tk app
-
-Connector(Tk)
-
-
-
-
-controller - all logic
-
-Connector()
 
 
