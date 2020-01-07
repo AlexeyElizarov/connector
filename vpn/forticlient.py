@@ -22,7 +22,6 @@ class FortiClient(VPN):
     _default_driver = r'C:\Program Files\Fortinet\FortiClient\FortiClient.exe'
 
     def __init__(self):
-        self._app = None
         self._is_connected = False
         self._chrome_options = Options()
         self._chrome_options.binary_location = self._default_driver

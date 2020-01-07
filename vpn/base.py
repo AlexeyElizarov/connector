@@ -8,6 +8,7 @@ __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
 from subprocess import Popen
 from abc import abstractmethod
+from configparser import ConfigParser
 
 
 class VPN:
@@ -17,6 +18,19 @@ class VPN:
     """
 
     _app = None  # Application ID
+    _config = None  # A path to configuration file
+
+    @property
+    def config(self):
+        return self._config
+
+    @config.setter
+    def config(self, value):
+        config = ConfigParser()
+        config.read(value)
+
+        for key, value in config['DEFAULT'].items():
+            setattr(self, key, value)
 
     @property
     @abstractmethod
@@ -45,17 +59,6 @@ class VPN:
         """
         self._execute(self.disconnect_command)
 
-    def config(self, path):
-        """
-        Updates VPN attributes from configuration file/
-        :param path: a path to a config file
-        :return: None
-        """
-
-        config = self._read_config(path)
-        for key, value in config.items():
-            setattr(self, key, value)
-
     @staticmethod
     def _execute(commands):
         """
@@ -68,29 +71,3 @@ class VPN:
 
         for command in commands:
             Popen(command, shell=True)
-
-    @staticmethod
-    def _read_config(path: str = ''):
-        """
-        Reads configuration parameters from the file.
-        :param file: a path to the connection config file.
-        :return: config dictionary
-        """
-        config = dict()
-        node = None
-
-        with open(path, 'r') as f:
-            config_file = f.readlines()
-
-        for line in config_file:
-            if line.startswith('['):
-                node = line.strip()[1:-1]
-                config[node] = dict()
-            else:
-                param, value = line.split('=')
-                if node:
-                    config[node][param.strip()] = value.strip()
-                else:
-                    config[param.strip()] = value.strip()
-
-        return config

@@ -1,17 +1,15 @@
+TODO: config parser
+
+
 TODO: add status bar feature
 TODO: add log feature
-
 TODO: set default pax, pady for pack geo manager:
         - impossible - use global variable
 
-TODO: implement subclass for saplogon based connectors
-TODO: implement subclass for RSA based connectors
-TODO: implement subclass for TeamViewer connectors
-TODO: implement subcluss for browser connectors
-
-TODO: SAP Service - ping with SAP router settings
-TODO: config management
 
 
+TODO: teamviwer - is it poissible to manage logon to remote desktop?
+TODO: RDP - is it poissible to manage logon to remote desktop?
 
-
+TODO: SAP conn - implement default logon language
+TODO: Forti - refactor - make vpn name obligotiry when init object

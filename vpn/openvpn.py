@@ -18,7 +18,7 @@ class OpenVPN(VPN):
 
     @property
     def connect_command(self):
-        return f'"{self._driver}" --connect {getattr(self, "config")}'
+        return f'"{self._driver}" --connect {getattr(self, "profile")}'
 
     @property
     def disconnect_command(self):
