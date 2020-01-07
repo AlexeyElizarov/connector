@@ -32,7 +32,6 @@ class Teamviewer:
         """
 
         command = f'{self._driver} --id {id} --Password {password}'
-        print(command)
         self._app = Popen(f'{self._driver} --id {id} --Password {password}')
 
     def close(self):
