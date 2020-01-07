@@ -1,10 +1,17 @@
-TODO: add status bar feature
+TODO: add status bar feature -> implement observer approach
 TODO: add log feature
 
-TODO: teamviwer - is it poissible to manage logon to remote desktop?
+TODO: teamviewer - is it poissible to manage logon to remote desktop?
 TODO: RDP - is it poissible to manage logon to remote desktop?
 
 TODO: SAP conn - implement default logon language
 TODO: Forti - refactor - make vpn name obligotiry when init object
 
-TODO: teamviwer and RDP -> move to umbrella class of RDC (Remote Desktop Connection)
+TODO: teamviwer and RDP -> move to base class of RDC (Remote Desktop Connection)
+
+TODO: account management
+TODO: RM access parsing
+
+TODO: specify where a Tkinter window opens
+
+TODO: SAPLogon - disable connect but if service is not selected.

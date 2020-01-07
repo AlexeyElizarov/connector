@@ -48,6 +48,12 @@ class SAP:
                 service.client = config[service_name]['client']
                 service.user = config[service_name]['user']
                 service.password = config[service_name]['password']
+
+                if config[service_name]['language']:
+                    service.language = config[service_name]['language']
+                else:
+                    service.language = config['DEFAULT']['language']
+
             except Exception as e:
                 pass
 
