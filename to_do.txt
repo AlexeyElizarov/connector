@@ -1,9 +1,5 @@
 TODO: add status bar feature
 TODO: add log feature
-TODO: set default pax, pady for pack geo manager:
-        - impossible - use global variable
-
-
 
 TODO: teamviwer - is it poissible to manage logon to remote desktop?
 TODO: RDP - is it poissible to manage logon to remote desktop?

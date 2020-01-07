@@ -20,9 +20,9 @@ class FortiClient(VPN):
     """
 
     _default_driver = r'C:\Program Files\Fortinet\FortiClient\FortiClient.exe'
+    _is_connected = False
 
     def __init__(self):
-        self._is_connected = False
         self._chrome_options = Options()
         self._chrome_options.binary_location = self._default_driver
         self._chrome_options.add_argument('--remote-debugging-port=12345')
