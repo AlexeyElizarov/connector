@@ -1,18 +1,16 @@
-TODO: refactor RSA connect feature validation
-
 TODO: add status bar feature
 TODO: add log feature
 
 TODO: set default pax, pady for pack geo manager:
         - impossible - use global variable
+
 TODO: implement subclass for saplogon based connectors
+TODO: implement subclass for RSA based connectors
+TODO: implement subclass for TeamViewer connectors
+TODO: implement subcluss for browser connectors
+
 TODO: SAP Service - ping with SAP router settings
 TODO: config management
-
-TODO: RSA - disable connect (raise pop-up) if security key is not entered.
-        - if key is not entered connect by enter should not work, connect button disabled
-        - if key kis less then 6 digits connect by enter should not work, connect button disabled
-
 
 
 

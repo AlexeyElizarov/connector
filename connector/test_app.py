@@ -7,18 +7,18 @@ Implements SAP Logon widget.
 __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
 
-from connector import Connector
+from connector import Base
 
 
-class TestConnector(Connector):
+class TestConnector(Base):
     """
     Test GUI implementation of the Connector.
     """
 
-    @Connector.switch
+    @Base.switch
     def connect(self):
-        pass
+        self.gui.status_bar.update_('Connecting...')
 
-    @Connector.switch
+    @Base.switch
     def disconnect(self):
-        pass
+        self.gui.status_bar.update_('Disconnecting...')

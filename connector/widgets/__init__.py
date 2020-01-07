@@ -5,5 +5,10 @@ from connector.widgets.saplogon import LFrSAPLogon
 from connector.widgets.options import FrmOptions
 from connector.widgets.validating_entry import EntValidating
 from connector.widgets.security_id_entry import EntSecurityId
+from connector.widgets.status_bar import FrmStatusBar
 # from connector.widgets.log import FrmLog
 # from connector.widgets.logger import TextHandler
+
+
+PADX = 2
+PADY = 2

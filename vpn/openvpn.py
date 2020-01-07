@@ -14,12 +14,13 @@ class OpenVPN(VPN):
     Provides interface to OpenVPN client.
     """
     # Default Open VPN client
-    _default_driver = 'openvpn-gui'
-    _default_config = None
+    _driver = 'openvpn-gui'
 
-    def __init__(self, driver=_default_driver, config=_default_config):
-        VPN.__init__(self, driver, config)
-        self._connect = f'"{self._driver}" --connect {getattr(self, "config")}'
-        self._disconnect = ['taskkill.exe /F /IM openvpn.exe',
-                            'taskkill.exe /F /IM openvpn-gui.exe']
+    @property
+    def connect_command(self):
+        return f'"{self._driver}" --connect {getattr(self, "config")}'
 
+    @property
+    def disconnect_command(self):
+        return ['taskkill.exe /F /IM openvpn.exe',
+                'taskkill.exe /F /IM openvpn-gui.exe']

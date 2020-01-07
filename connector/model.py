@@ -1,13 +1,12 @@
 # -*- coding: utf-8 -*-
 
 """
-Implements SAP Logon widget.
+Implements Connector data model.
 """
 
 __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
-
-from sap import Landscape
+from sap import SAP
 
 
 class ConnectorModel:
@@ -15,10 +14,34 @@ class ConnectorModel:
     the Model manages the data and defines rules and behaviors of the Connector.
     """
 
-    def __init__(self, **options):
+    _title = None  # Application title
+    _sap = None  # SAP landscape object
+    _vpn = None  # VPN object
 
-        for key, value in options.items():
-            setattr(self, key, value)
+    # Application title handling
+    @property
+    def title(self):
+        return self._title
 
-        if getattr(self, 'sap', None):
-            setattr(self, 'sap_services', Landscape(getattr(self, 'sap')).services)
+    @title.setter
+    def title(self, value):
+        self._title = value
+
+    @title.getter
+    def title(self):
+        if self._title:
+            return self._title
+        else:
+            return 'Connector'
+
+    # SAP Landscape handling
+    @property
+    def sap(self):
+        return self._sap
+
+    @sap.setter
+    def sap(self, value):
+        self._sap = SAP(value)
+
+
+

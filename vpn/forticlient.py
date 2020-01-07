@@ -11,17 +11,17 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import Select
 from time import sleep
+from vpn import VPN
 
 
-class FortiClient:
+class FortiClient(VPN):
     """
     Provides basic interface to FortiClient.
     """
 
     _default_driver = r'C:\Program Files\Fortinet\FortiClient\FortiClient.exe'
 
-    def __init__(self, vpn_name):
-        self.vpn_name = vpn_name
+    def __init__(self):
         self._app = None
         self._is_connected = False
         self._chrome_options = Options()
@@ -45,24 +45,25 @@ class FortiClient:
             self._app.quit()
             self._app = None
 
-    def connect(self, username, password):
+    def connect(self):
         """
         Connects to VPN with given VPN name, user and password.
-        :param vpn_name: VPN name
-        :param username: username
-        :param password: password
         :return: None
         """
+
+        if not self._app:
+            self.open()
+
         self._app.find_element_by_id('vpn-sidebar').click()
 
         for i in range(5):
             try:
                 vpn_names = Select(self._app.find_element_by_id('vpn-connection'))
-                vpn_names.select_by_visible_text(self.vpn_name)
+                vpn_names.select_by_visible_text(getattr(self, 'vpn_name'))
                 username_input = self._app.find_element_by_id('vpn-username')
                 username_input.clear()
-                username_input.send_keys(username)
-                self._app.find_element_by_id('vpn-password').send_keys(password)
+                username_input.send_keys(getattr(self, 'username'))
+                self._app.find_element_by_id('vpn-password').send_keys(getattr(self, 'password'))
             except Exception as e:
                 print(e)
                 sleep(1)
@@ -80,4 +81,6 @@ class FortiClient:
         """
         if self._is_connected:
             self._app.find_element_by_id('vpn-disconnect-button').click()
+
+        self.close()
 
