@@ -1,13 +1,11 @@
 from tkinter import ttk
+from connector.widgets import PADX, PADY
 
 
 class FrmControls(ttk.Frame):
     """
     Implements GUI controls to connect to customer's system, disconnect from customer's system and close application.
     """
-
-    _padx = 2
-    _pady = 2
 
     def __init__(self, root):
         ttk.Frame.__init__(self, root)
@@ -17,9 +15,9 @@ class FrmControls(ttk.Frame):
         self.btn_disconnect['state'] = 'disabled'
         self.btn_close = ttk.Button(self, text='Close')
 
-        self.btn_connect.pack(side='left', padx=self._padx, pady=self._pady)
-        self.btn_close.pack(side='right', padx=self._padx, pady=self._pady)
-        self.btn_disconnect.pack(side='right', padx=self._padx, pady=self._pady)
+        self.btn_connect.pack(side='left', padx=PADX, pady=PADY)
+        self.btn_close.pack(side='right', padx=PADX, pady=PADY)
+        self.btn_disconnect.pack(side='right', padx=PADX, pady=PADY)
 
     def switch(self):
         """

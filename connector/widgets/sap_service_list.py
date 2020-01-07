@@ -14,9 +14,6 @@ class LBxSAPService(Listbox):
     Implements SAP Service List Box.
     """
 
-    _padx = 2
-    _pady = 2
-
     def __init__(self, root, services: list = None):
         super().__init__(root, width=50, relief=GROOVE, borderwidth=2, highlightthickness=0)
 

@@ -1,3 +1,6 @@
+PADX = 2
+PADY = 2
+
 from connector.widgets.controls import FrmControls
 from connector.widgets.sap_service_list import LBxSAPService
 from connector.widgets.rsa import LFrRSA
@@ -10,5 +13,3 @@ from connector.widgets.status_bar import FrmStatusBar
 # from connector.widgets.logger import TextHandler
 
 
-PADX = 2
-PADY = 2
