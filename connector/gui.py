@@ -23,6 +23,9 @@ class ConnectorGUI(Tk):
         self.resizable(0, 0)
         self.minsize(300, self.winfo_height())
 
+        x = int(self.winfo_screenwidth() / 2 - 150)
+        y = int(self.winfo_screenheight() / 2 - 150)
+
         # Initialization of widgets
         self.controls = FrmControls(self)
         self.options = FrmOptions(self)
@@ -32,6 +35,7 @@ class ConnectorGUI(Tk):
         self.options.pack(expand=True, fill='x')
         self.controls.pack(expand=True, fill='x')
         self.status_bar.pack(expand=True, fill='x', padx=PADX, pady=PADY)
+        self.geometry(f'+{x}+{y}')
 
     def saplogon(self):
         self.saplogon = LFrSAPLogon(self.options, self.model.sap.services)
