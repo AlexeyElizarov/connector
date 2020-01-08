@@ -6,11 +6,7 @@ TODO: RDP - is it poissible to manage logon to remote desktop?
 
 TODO: Forti - refactor - make vpn name obligotiry when init object
 
-TODO: teamviwer and RDP -> move to base class of RDC (Remote Desktop Connection)
-
 TODO: account management
 TODO: RM access parsing
 
-TODO: specify where a Tkinter window opens
-
-TODO: SAPLogon - disable connect but if service is not selected.
+TODO: SAPLogon - disable connect button if service is not selected.

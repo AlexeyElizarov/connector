@@ -48,7 +48,7 @@ class RDC:
         Opens remote desktop using command line.
         :return: None
         """
-        self._app = self._execute(self.open_command)
+        self._execute(self.open_command)
 
     def close(self):
         """
@@ -57,8 +57,7 @@ class RDC:
         """
         self._execute(self.close_command)
 
-    @staticmethod
-    def _execute(commands):
+    def _execute(self, commands):
         """
         Private method to execute commands in command line.
         :param commands: commands to execute. May be a string or a list.
@@ -68,4 +67,4 @@ class RDC:
             commands = [commands]
 
         for command in commands:
-            Popen(command, shell=True)
+            self._app = Popen(command, shell=True)
