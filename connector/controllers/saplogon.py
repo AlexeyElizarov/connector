@@ -59,7 +59,7 @@ class SAPLogon(Connector):
                 self.vpn.connect()
 
             # Check over time if application server is reachable. If it is, then open SAP GUI.
-            for i in range(10):
+            for i in range(15):
                 if self.sap.selected_service.is_reachable:
                     self.sap.selected_service.gui.open()
                     self.sap.connections.append(self.sap.selected_service)
