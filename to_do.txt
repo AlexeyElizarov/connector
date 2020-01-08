@@ -4,8 +4,6 @@ TODO: add log feature
 TODO: teamviewer - is it poissible to manage logon to remote desktop?
 TODO: RDP - is it poissible to manage logon to remote desktop?
 
-TODO: Forti - refactor - make vpn name obligotiry when init object
-
 TODO: account management
 TODO: RM access parsing
 

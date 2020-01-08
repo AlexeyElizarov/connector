@@ -8,6 +8,7 @@ __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
 from connector.controllers.base import Connector
 from time import sleep
+from tkinter import DISABLED
 
 
 class SAPLogon(Connector):
@@ -24,7 +25,7 @@ class SAPLogon(Connector):
         self.model.sap = value
         self._sap = self.model.sap
         self.gui.saplogon()
-        self.gui.saplogon.lbx_sap_services.bind('<<ListboxSelect>>', self._update_service)
+        self.gui.saplogon.lbx_sap_services.bind('<<ListboxSelect>>', self._select_service)
         self.gui.saplogon.lbx_sap_services.bind('<Double-Button-1>', self._connect)
         self.gui.unbind('<Return>')
 
@@ -37,13 +38,21 @@ class SAPLogon(Connector):
         self.model.vpn = value
         self._vpn = self.model.vpn
 
-    def _update_service(self, event):
+    def _select_service(self, event):
         """
         Updates selected SAP service.
         :param event: None
         :return: None
         """
-        self.model.sap.selected_service = self.gui.saplogon.selected_service
+
+        # Update selected service
+        self.sap.selected_service = self.gui.saplogon.selected_service
+
+        # Enable connect button if service is selected.
+        if self.sap.selected_service:
+            self.gui.controls.btn_connect['state'] = 'normal'
+        else:
+            self.gui.controls.btn_connect['state'] = 'disabled'
 
     def connect(self):
         """
