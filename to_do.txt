@@ -1,4 +1,15 @@
 TODO: add status bar feature -> implement observer approach
+
+observer - the one who receives messages - status bar
+observable - the one who sents messages - model
+statuses:
+disconnected
+connecting
+connected
+disconnecting
+
+TODO: move GUI to widgets
+
 TODO: add log feature
 
 TODO: teamviewer - is it poissible to manage logon to remote desktop?
@@ -7,4 +18,8 @@ TODO: RDP - is it poissible to manage logon to remote desktop?
 TODO: account management
 TODO: RM access parsing
 
-TODO: SAPLogon - disable connect button if service is not selected.
+TODO: default configs
+
+TODO: add metaclasses (ABCMeta from abc)
+TODO: add threading
+TODO: Close without delay

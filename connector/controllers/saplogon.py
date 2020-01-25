@@ -8,7 +8,6 @@ __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
 from connector.controllers.base import Connector
 from time import sleep
-from tkinter import DISABLED
 
 
 class SAPLogon(Connector):
@@ -60,6 +59,8 @@ class SAPLogon(Connector):
         :return: None.
         """
 
+        self.model.status.post('Connecting...')
+
         # If saprouter has not been provided, connect to VPN and open SAP GUI.
         if not getattr(self.sap.selected_service, 'routerid', None):
 
@@ -85,6 +86,7 @@ class SAPLogon(Connector):
         for i in range(20):
             if not self.sap.selected_service.gui.is_closed:
                 self.gui.controls.btn_disconnect['state'] = 'normal'
+                self.model.status.post('Connected')
                 break
             else:
                 sleep(1)
@@ -94,6 +96,9 @@ class SAPLogon(Connector):
         Closes SAP GUI sessions and disconnects from VPN.
         :return: None
         """
+
+        self.model.status.post('Disconnecting...')
+
         for i in range(15):
             for service in self.sap.connections:
                 if not service.gui.is_closed:
@@ -101,6 +106,7 @@ class SAPLogon(Connector):
 
         self.vpn.disconnect()
         self.gui.controls.btn_disconnect['state'] = 'disabled'
+        self.model.status.post('Disconnected')
 
 
 

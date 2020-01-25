@@ -86,6 +86,7 @@ class SAPGUI:
             command += f' -language={self.service.language}'
 
         # Open SAP GUI instance
+        print(command)
         Popen(command)
 
     def close(self):

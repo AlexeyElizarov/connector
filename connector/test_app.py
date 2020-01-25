@@ -8,6 +8,7 @@ __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
 
 from connector import Base
+from time import sleep
 
 
 class TestConnector(Base):
@@ -17,8 +18,14 @@ class TestConnector(Base):
 
     @Base.switch
     def connect(self):
-        self.gui.status_bar.update_('Connecting...')
+        pass
+        # self.gui.status_bar.update_status('Connecting...')
+        # self.gui.update_idletasks()
+        # sleep(5)
 
     @Base.switch
     def disconnect(self):
-        self.gui.status_bar.update_('Disconnecting...')
+        pass
+        # self.gui.status_bar.update_status('Disconnecting...')
+        # self.gui.update_idletasks()
+        # sleep(5)

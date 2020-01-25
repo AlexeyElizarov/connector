@@ -1,4 +1,4 @@
-from tkinter import ttk, GROOVE
+from tkinter import ttk, GROOVE, StringVar
 from connector.widgets import PADX, PADY
 
 
@@ -10,8 +10,11 @@ class FrmStatusBar(ttk.Frame):
     def __init__(self, root):
         ttk.Frame.__init__(self, root, relief=GROOVE)
 
-        self.lbl_message = ttk.Label(self)
+        self.message = StringVar()
+        self.message.set('Disconnected')
+        self.lbl_message = ttk.Label(self, textvariable=self.message)
         self.lbl_message.pack(padx=PADX, pady=PADY, side='left')
 
-    def update_(self, text):
-        self.lbl_message['text'] = text
+    def refresh(self, message):
+        self.message.set(message)
+        self.update_idletasks()

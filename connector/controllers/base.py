@@ -8,7 +8,8 @@ __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
 
 from abc import abstractmethod
-from connector import GUI, Model
+from connector import GUI
+from connector.models import Model
 
 
 class Connector:

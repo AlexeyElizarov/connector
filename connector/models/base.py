@@ -7,6 +7,7 @@ Implements Connector data model.
 __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
 from sap import SAP
+from connector.models import Observable
 
 
 class ConnectorModel:
@@ -17,6 +18,16 @@ class ConnectorModel:
     _title = None  # Application title
     _sap = None  # SAP landscape object
     _vpn = None  # VPN object
+    _status = Observable()  # Status
+
+    @property
+    def status(self):
+        return self._status
+
+    @status.setter
+    def status(self, value):
+        self._status._code = value
+        self._status.post(self._status._code)
 
     # Application title handling
     @property
@@ -42,6 +53,4 @@ class ConnectorModel:
     @sap.setter
     def sap(self, value):
         self._sap = SAP(value)
-
-
 

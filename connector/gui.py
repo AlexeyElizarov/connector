@@ -6,7 +6,7 @@ Implements SAP Logon widget.
 
 __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
-from tkinter import Tk
+from tkinter import Tk, StringVar
 from connector.widgets import FrmOptions, FrmControls, FrmStatusBar, LFrSAPLogon, LFrRSA, PADX, PADY
 
 
@@ -30,6 +30,7 @@ class ConnectorGUI(Tk):
         self.controls = FrmControls(self)
         self.options = FrmOptions(self)
         self.status_bar = FrmStatusBar(self)
+        self.model.status.register(self.status_bar)
 
         # Geometry management
         self.options.pack(expand=True, fill='x')

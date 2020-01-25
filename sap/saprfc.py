@@ -29,6 +29,9 @@ class SAPRFC:
         :return: pyrfc.Connection (https://sap.github.io/PyRFC/pyrfc.html)
         """
 
+        if not getattr(self.service, 'language', None):
+            self.service.language = 'EN'
+
         params = dict(client=self.service.client, user=self.service.user, passwd=self.service.password,
                       lang=self.service.language, ashost=self.service.hostname, sysnr=self.service.sysnr)
 
