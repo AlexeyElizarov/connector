@@ -26,8 +26,8 @@ class ConnectorModel:
 
     @status.setter
     def status(self, value):
-        self._status._code = value
-        self._status.post(self._status._code)
+        self._status._message = value
+        self._status.post(self._status._message)
 
     # Application title handling
     @property
