@@ -38,8 +38,10 @@ class Connector:
     def switch(func):
         def switcher(*args):
             self = args[0]
+            self.model.status.code *= -1
             func(self)
             self.gui.controls.switch()
+            self.model.status.code += 1
         return switcher
 
     @abstractmethod
@@ -48,7 +50,6 @@ class Connector:
         Abstract method to connect.
         :return: None
         """
-        print('Connector.connect')
         pass
 
     @abstractmethod

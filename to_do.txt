@@ -3,10 +3,13 @@ TODO: add status bar feature -> implement observer approach
 observer - the one who receives messages - status bar
 observable - the one who sents messages - model
 statuses:
-disconnected
-connecting
-connected
-disconnecting
+disconnected *= 0
+connecting += 1
+connected % 2
+disconnecting = -1
+
+disconnected -> connecting -> connected
+0               1               2
 
 TODO: move GUI to widgets
 

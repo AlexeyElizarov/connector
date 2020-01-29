@@ -18,7 +18,7 @@ class Observable(metaclass=ABCMeta):
         """
         self.observers.append(observer)
 
-    def post(self, message: str) -> None:
+    def post(self, message) -> None:
         """
         Notify observers.
         """
