@@ -2,16 +2,14 @@ TODO: add status bar feature -> implement observer approach
 
 observer - the one who receives messages - status bar
 observable - the one who sents messages - model
-statuses:
-disconnected *= 0
-connecting += 1
-connected % 2
-disconnecting = -1
 
-disconnected -> connecting -> connected
-0               1               2
-
+TODO: change widget apreance -> if sap is set then display SAP, if RSA - RSA widget, else - default
+TODO: Close without delay
+TODO: SAPlogon - down arrow - set focus on list box first item
+FIXME: SAPlogon - Connect by enter does not work
 TODO: move GUI to widgets
+TODO: Add reference to access page from application
+TODO: minimize to sys tray when connected.
 
 TODO: add log feature
 
@@ -25,4 +23,3 @@ TODO: default configs
 
 TODO: add metaclasses (ABCMeta from abc)
 TODO: add threading
-TODO: Close without delay

@@ -31,6 +31,7 @@ class ConnectorGUI(Tk):
         self.options = FrmOptions(self)
         self.status_bar = FrmStatusBar(self)
         self.model.status.register(self.status_bar)
+        self.model.status.code = -1
 
         # Geometry management
         self.options.pack(expand=True, fill='x')

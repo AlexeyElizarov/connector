@@ -11,7 +11,6 @@ class FrmStatusBar(ttk.Frame):
         ttk.Frame.__init__(self, root, relief=GROOVE)
 
         self.message = StringVar()
-        self.message.set('Disconnected')
         self.lbl_message = ttk.Label(self, textvariable=self.message)
         self.lbl_message.pack(padx=PADX, pady=PADY, side='left')
 

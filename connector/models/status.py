@@ -12,7 +12,7 @@ from connector.models.observable import Observable
 
 class Status(Observable):
 
-    _code = -1
+    _code = 0
     _message = str
 
     # Status code handling

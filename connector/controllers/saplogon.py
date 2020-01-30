@@ -59,7 +59,12 @@ class SAPLogon(Connector):
         :return: None.
         """
 
-        self.model.status.post('Connecting...')
+        if self.model.status.code < 0:
+            self.model.status.code *= -1
+        else:
+            self.model.status.code += 1
+
+        # self.model.status.post('Connecting...')
 
         # If saprouter has not been provided, connect to VPN and open SAP GUI.
         if not getattr(self.sap.selected_service, 'routerid', None):
@@ -86,7 +91,8 @@ class SAPLogon(Connector):
         for i in range(20):
             if not self.sap.selected_service.gui.is_closed:
                 self.gui.controls.btn_disconnect['state'] = 'normal'
-                self.model.status.post('Connected')
+                self.model.status.code += 1
+                # self.model.status.post('Connected')
                 break
             else:
                 sleep(1)
@@ -97,16 +103,22 @@ class SAPLogon(Connector):
         :return: None
         """
 
-        self.model.status.post('Disconnecting...')
+        # self.model.status.post('Disconnecting...')
+        self.model.status.code *= -1
 
         for i in range(15):
             for service in self.sap.connections:
                 if not service.gui.is_closed:
                     service.gui.close()
 
-        self.vpn.disconnect()
+        try:
+            self.vpn.disconnect()
+        except:
+            pass
         self.gui.controls.btn_disconnect['state'] = 'disabled'
-        self.model.status.post('Disconnected')
+        # self.model.status.post('Disconnected')
+        self.model.status.code = -1
+
 
 
 
