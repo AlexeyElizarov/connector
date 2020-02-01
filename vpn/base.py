@@ -30,7 +30,6 @@ class VPN:
         config.read(value)
 
         for key, value in config['DEFAULT'].items():
-            print(key, value)
             setattr(self, key, value)
 
     @property

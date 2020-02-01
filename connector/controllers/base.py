@@ -65,12 +65,14 @@ class Connector:
         Disconnects and closes application.
         :return: None
         """
-        try:
-            self.disconnect()
-        except Exception:
-            pass
-        finally:
-            self.gui.quit()
+
+        if self.model.is_connected:
+            try:
+                self.disconnect()
+            except Exception as e:
+                print(e)
+
+        self.gui.quit()
 
     def run(self):
         self.gui.mainloop()

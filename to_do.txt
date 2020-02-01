@@ -3,8 +3,8 @@ TODO: add status bar feature -> implement observer approach
 observer - the one who receives messages - status bar
 observable - the one who sents messages - model
 
-TODO: change widget apreance -> if sap is set then display SAP, if RSA - RSA widget, else - default
 TODO: Close without delay
+TODO: change widget apreance -> if sap is set then display SAP, if RSA - RSA widget, else - default
 TODO: SAPlogon - down arrow - set focus on list box first item
 FIXME: SAPlogon - Connect by enter does not work
 TODO: move GUI to widgets

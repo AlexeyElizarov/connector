@@ -45,3 +45,8 @@ class ConnectorModel:
     def sap(self, value):
         self._sap = SAP(value)
 
+    @property
+    def is_connected(self):
+        if self.status.code > 0 and self.status.code % 2 == 0:
+            return True
+        return False
