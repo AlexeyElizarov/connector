@@ -64,8 +64,6 @@ class SAPLogon(Connector):
         else:
             self.model.status.code += 1
 
-        # self.model.status.post('Connecting...')
-
         # If saprouter has not been provided, connect to VPN and open SAP GUI.
         if not getattr(self.sap.selected_service, 'routerid', None):
 
@@ -92,7 +90,6 @@ class SAPLogon(Connector):
             if not self.sap.selected_service.gui.is_closed:
                 self.gui.controls.btn_disconnect['state'] = 'normal'
                 self.model.status.code += 1
-                # self.model.status.post('Connected')
                 break
             else:
                 sleep(1)
