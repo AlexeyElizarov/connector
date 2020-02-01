@@ -27,6 +27,11 @@ class SAPLogon(Connector):
         self.gui.saplogon.lbx_sap_services.bind('<<ListboxSelect>>', self._select_service)
         self.gui.saplogon.lbx_sap_services.bind('<Double-Button-1>', self._connect)
         self.gui.unbind('<Return>')
+        self.gui.saplogon.lbx_sap_services.bind('<Return>', self._connect)
+
+    def _connect(self, event):
+        self._select_service(event)
+        self.connect()
 
     @property
     def vpn(self):

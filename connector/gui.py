@@ -42,7 +42,8 @@ class ConnectorGUI(Tk):
     def saplogon(self):
         self.saplogon = LFrSAPLogon(self.options, self.model.sap.services)
         self.saplogon.pack(expand=True, fill='x', padx=PADX, pady=PADY)
-        self.controls.btn_connect['state'] = 'disabled'
+        if not self.saplogon.selected_service:
+            self.controls.btn_connect['state'] = 'disabled'
 
     def rsa(self):
         self.rsa = LFrRSA(self.options)
