@@ -1,17 +1,6 @@
-TODO: add status bar feature -> implement observer approach
-
-observer - the one who receives messages - status bar
-observable - the one who sents messages - model
-
-FIXME: SAPlogon - Connect by enter does not work
-TODO: move GUI to widgets
 TODO: Add reference to access page from application
 TODO: minimize to sys tray when connected.
 
-TODO: add log feature
-
-TODO: teamviewer - is it poissible to manage logon to remote desktop?
-TODO: RDP - is it poissible to manage logon to remote desktop?
 
 TODO: account management
 TODO: RM access parsing
@@ -20,5 +9,11 @@ TODO: default configs
 
 TODO: add metaclasses (ABCMeta from abc)
 TODO: add threading
-TODO: change widget apreance -> if sap is set then display SAP, if RSA - RSA widget, else - default
+
 FIXME: geometry glith when run app
+
+REFACT: major refactoring
+TODO: change widget apreance -> if sap is set then display SAP, if RSA - RSA widget, else - default
+
+TODO: teamviewer - is it poissible to manage logon to remote desktop?
+TODO: add log feature
