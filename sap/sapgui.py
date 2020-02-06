@@ -8,8 +8,9 @@ __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
 from subprocess import Popen
 from time import sleep
-from pywinauto.application import Application
 from winreg import OpenKey, QueryValueEx, HKEY_LOCAL_MACHINE
+
+from pywinauto.application import Application
 
 
 class SAPGUI:
@@ -86,7 +87,6 @@ class SAPGUI:
             command += f' -language={self.service.language}'
 
         # Open SAP GUI instance
-        print(command)
         Popen(command)
 
     def close(self):

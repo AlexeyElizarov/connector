@@ -6,9 +6,9 @@ Implements parent class for VPN clients
 
 __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
-from subprocess import Popen
 from abc import abstractmethod
 from configparser import ConfigParser
+from subprocess import Popen
 
 
 class VPN:
@@ -20,14 +20,9 @@ class VPN:
     _app = None  # Application ID
     _config = None  # A path to configuration file
 
-    @property
-    def config(self):
-        return self._config
-
-    @config.setter
-    def config(self, value):
+    def __init__(self):
         config = ConfigParser()
-        config.read(value)
+        config.read(self._config)
 
         for key, value in config['DEFAULT'].items():
             setattr(self, key, value)

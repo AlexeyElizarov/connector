@@ -1,19 +1,20 @@
+TODO: read app settings from config
+    TITLE
+    LAYOUT
+    ACCESS PAGE
+
 TODO: Add reference to access page from application
+
+
 TODO: minimize to sys tray when connected.
-
-
 TODO: account management
 TODO: RM access parsing
-
 TODO: default configs
-
-TODO: add metaclasses (ABCMeta from abc)
 TODO: add threading
-
 FIXME: geometry glith when run app
-
-REFACT: major refactoring
+FIXME: major refactoring
 TODO: change widget apreance -> if sap is set then display SAP, if RSA - RSA widget, else - default
-
 TODO: teamviewer - is it poissible to manage logon to remote desktop?
 TODO: add log feature
+TODO: deactivate sap servicde if there's no user/pass provided in config
+TODO: implement "partner not reached"

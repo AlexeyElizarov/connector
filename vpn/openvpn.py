@@ -15,6 +15,7 @@ class OpenVPN(VPN):
     """
     # Default Open VPN client
     _driver = 'openvpn-gui'
+    _config = 'openvpn.ini'
 
     @property
     def connect_command(self):

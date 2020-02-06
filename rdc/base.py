@@ -6,9 +6,9 @@ Provides base API to remote desktop software, e.g. MS RDP and Teamviewer.
 
 __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
-from subprocess import Popen
-from configparser import ConfigParser
 from abc import abstractmethod
+from configparser import ConfigParser
+from subprocess import Popen
 
 
 class RDC:
@@ -16,8 +16,15 @@ class RDC:
     This is a base class for remote desktop software.
     """
 
-    _config = None
+    _config = 'rdc.ini'
     _app = None
+
+    def __init__(self):
+        _params = ConfigParser()
+        _params.read(self._config)
+
+        for item, value in _params['DEFAULT'].items():
+            setattr(self, item, value)
 
     @property
     def config(self):

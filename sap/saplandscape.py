@@ -7,9 +7,9 @@ Provides interface to SAP Landscape settings
 __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
 
-from winreg import OpenKey, QueryValueEx, HKEY_CURRENT_USER
-from subprocess import Popen
 from os import path
+from subprocess import Popen
+from winreg import OpenKey, QueryValueEx, HKEY_CURRENT_USER
 from lxml import etree
 from sap import GUI, RFC
 

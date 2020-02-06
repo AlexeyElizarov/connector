@@ -1,0 +1,1441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="59b232c5-60a2-4da6-86b4-13e9e38f8177" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connector.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/rdc.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/models/vpn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_old/connector.py" beforeDir="false" afterPath="$PROJECT_DIR$/_old/connector.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/_old/controller.py" beforeDir="false" afterPath="$PROJECT_DIR$/_old/controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connector/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connector/controllers/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connector/controllers/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connector/controllers/rsabase.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connector/controllers/saplogon.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connector/models/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connector/models/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connector/models/observable.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connector/models/status.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connector/widgets/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connector/widgets/controls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connector/widgets/gui.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connector/widgets/log.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connector/widgets/logger.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connector/widgets/options.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connector/widgets/rsa.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connector/widgets/sap_service_list.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connector/widgets/saplogon.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connector/widgets/security_id_entry.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connector/widgets/status_bar.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connector/widgets/validating_entry.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rdc/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/rdc/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rdc/rdp.py" beforeDir="false" afterPath="$PROJECT_DIR$/rdc/rdp.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rdc/teamviewer.py" beforeDir="false" afterPath="$PROJECT_DIR$/rdc/teamviewer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sap/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/sap/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sap/sapbase.py" beforeDir="false" afterPath="$PROJECT_DIR$/sap/sapbase.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sap/sapgui.py" beforeDir="false" afterPath="$PROJECT_DIR$/sap/sapgui.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sap/saplandscape.py" beforeDir="false" afterPath="$PROJECT_DIR$/sap/saplandscape.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_app.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/to_do.txt" beforeDir="false" afterPath="$PROJECT_DIR$/to_do.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vpn/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/vpn/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vpn/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/vpn/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vpn/cisco.py" beforeDir="false" afterPath="$PROJECT_DIR$/vpn/cisco.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vpn/forticlient.py" beforeDir="false" afterPath="$PROJECT_DIR$/vpn/forticlient.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vpn/openvpn.py" beforeDir="false" afterPath="$PROJECT_DIR$/vpn/openvpn.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vpn/pulse.py" beforeDir="false" afterPath="$PROJECT_DIR$/vpn/pulse.py" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/to_do.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_tests/_openvpn_connector/connector.pyw">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/widgets/gui.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="49" column="70" lean-forward="true" selection-start-line="49" selection-start-column="70" selection-end-line="49" selection-end-column="70" />
+              <folding>
+                <element signature="e#123#145#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/controllers/saplogon.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+              <folding>
+                <element signature="e#132#154#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/sap/sapbase.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+              <folding>
+                <element signature="e#139#176#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/tkinter/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="705">
+              <caret line="1701" selection-start-line="1701" selection-end-line="1701" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>_DEFAULT_DRIVER</find>
+      <find>_PATH_</find>
+      <find>_PATH</find>
+      <find>print</find>
+      <find>reac</find>
+      <find>_driver</find>
+      <find>port</find>
+      <find>Tk</find>
+      <find>TextHandler</find>
+      <find>Queue</find>
+      <find>_saplogon</find>
+      <find>pid</find>
+      <find>thre</find>
+      <find>acc</find>
+      <find>REMOTE</find>
+      <find>remote</find>
+      <find>a2fce9c2-8cec-469f-9a3e-493dc9965577</find>
+      <find>access</find>
+      <find>self.node</find>
+      <find>_update_service</find>
+      <find>LFrSAPLogon</find>
+      <find>controller.</find>
+      <find>gui</find>
+      <find>Landscape</find>
+      <find>self.gui</find>
+      <find>self.sap</find>
+      <find>self.vpn</find>
+      <find>_saplogon_layout</find>
+      <find>_is_connected</find>
+      <find>vpn</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>self.view</replace>
+      <replace>self.model.sap</replace>
+      <replace>self.model.vpn</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/sap/__init__.py" />
+        <option value="$PROJECT_DIR$/connector/widgets/base.py" />
+        <option value="$PROJECT_DIR$/connector/controllers/main.py" />
+        <option value="$PROJECT_DIR$/connector/controllers/baseline.py" />
+        <option value="$PROJECT_DIR$/connector/controllers/saplogon.py" />
+        <option value="$PROJECT_DIR$/connector/controllers/__init__.py" />
+        <option value="$PROJECT_DIR$/connector/widgets/__init__.py" />
+        <option value="$PROJECT_DIR$/connector/controllers/rsabase.py" />
+        <option value="$PROJECT_DIR$/connector/connector.py" />
+        <option value="$PROJECT_DIR$/connector/controllers/base.py" />
+        <option value="$PROJECT_DIR$/controllers/__init__.py" />
+        <option value="$PROJECT_DIR$/widgets/__init__.py" />
+        <option value="$PROJECT_DIR$/widgets/controls.py" />
+        <option value="$PROJECT_DIR$/widgets/rsa.py" />
+        <option value="$PROJECT_DIR$/widgets/security_id_entry.py" />
+        <option value="$PROJECT_DIR$/widgets/saplogon.py" />
+        <option value="$PROJECT_DIR$/widgets/status_bar.py" />
+        <option value="$PROJECT_DIR$/_tests/config.ini" />
+        <option value="$PROJECT_DIR$/_tests/_Baseline/_test_baseline.py" />
+        <option value="$PROJECT_DIR$/_tests/_Baseline/config.ini" />
+        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_48.py" />
+        <option value="$PROJECT_DIR$/connector.py" />
+        <option value="$PROJECT_DIR$/models/status.py" />
+        <option value="$PROJECT_DIR$/_tests/_baseline/config.ini" />
+        <option value="$PROJECT_DIR$/models/app.py" />
+        <option value="$PROJECT_DIR$/_tests/_baseline/_test_baseline.py" />
+        <option value="$PROJECT_DIR$/_tests/_rdc/_test_rdc_connector.py" />
+        <option value="$PROJECT_DIR$/_tests/_rdc_connector/_test_rdc_connector.py" />
+        <option value="$PROJECT_DIR$/_tests/_rdc_connector/config.ini" />
+        <option value="$PROJECT_DIR$/rdc/teamviewer.py" />
+        <option value="$PROJECT_DIR$/_tests/_test_rdc/teamviewer.ini" />
+        <option value="$PROJECT_DIR$/rdc/base.py" />
+        <option value="$PROJECT_DIR$/_tests/_test_rdc/_test_teamviewer.py" />
+        <option value="$PROJECT_DIR$/controllers/base.py" />
+        <option value="$PROJECT_DIR$/controllers/baseline.py" />
+        <option value="$PROJECT_DIR$/rdc/rdp.py" />
+        <option value="$PROJECT_DIR$/_tests/_sap_connector/config.ini" />
+        <option value="$PROJECT_DIR$/sap/sapbase.py" />
+        <option value="$PROJECT_DIR$/sap/sapgui.py" />
+        <option value="$PROJECT_DIR$/models/vpn.py" />
+        <option value="$PROJECT_DIR$/models/rdc.py" />
+        <option value="$PROJECT_DIR$/models/__init__.py" />
+        <option value="$PROJECT_DIR$/models/model.py" />
+        <option value="$PROJECT_DIR$/vpn/base.py" />
+        <option value="$PROJECT_DIR$/vpn/cisco.py" />
+        <option value="$PROJECT_DIR$/vpn/openvpn.py" />
+        <option value="$PROJECT_DIR$/vpn/forticlient.py" />
+        <option value="$PROJECT_DIR$/vpn/pulse.py" />
+        <option value="$PROJECT_DIR$/to_do.txt" />
+        <option value="$PROJECT_DIR$/widgets/gui.py" />
+        <option value="$PROJECT_DIR$/controllers/saplogon.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+        <option value="$PROJECT_DIR$/.idea/misc.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="connector" type="b2602c69:ProjectViewProjectNode" />
+              <item name="connector" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="connector" type="b2602c69:ProjectViewProjectNode" />
+              <item name="connector" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="connector" type="b2602c69:ProjectViewProjectNode" />
+              <item name="connector" type="462c0819:PsiDirectoryNode" />
+              <item name="sap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="connector" type="b2602c69:ProjectViewProjectNode" />
+              <item name="connector" type="462c0819:PsiDirectoryNode" />
+              <item name="widgets" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_tests/_openvpn_connector" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PyProjects\connector\_tests\_old" />
+      <recent name="D:\PyProjects\connector\_old" />
+      <recent name="D:\PyProjects\connectors" />
+      <recent name="D:\PyProjects\connectors\connector" />
+      <recent name="D:\PyProjects\connectors\connector\widgets" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PyProjects\connector\_tests\_openvpn_connector" />
+      <recent name="D:\PyProjects\connector\_tests\_sap_connector" />
+      <recent name="D:\PyProjects\connector\_tests\_rdc_connector" />
+      <recent name="D:\PyProjects\connector\_tests\_Baseline" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.connector.pyw">
+    <configuration name="_test_rdc_connector" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="connector" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_tests/_rdc_connector" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_tests/_rdc_connector/_test_rdc_connector.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="_test_sap_connector" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="connector" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_tests/_sap_connector" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_tests/_sap_connector/_test_sap_connector.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="_text_pulse.pyw" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="connector" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_tests/_pulse_based" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_tests/_pulse_based/_text_pulse.pyw" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="connector.pyw" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="connector" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_tests/_openvpn_connector" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_tests/_openvpn_connector/connector.pyw" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="pulse" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="connector" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/vpn" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vpn/pulse.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.connector.pyw" />
+        <item itemvalue="Python._test_sap_connector" />
+        <item itemvalue="Python._text_pulse.pyw" />
+        <item itemvalue="Python.pulse" />
+        <item itemvalue="Python._test_rdc_connector" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="59b232c5-60a2-4da6-86b4-13e9e38f8177" name="Default Changelist" comment="" />
+      <created>1572599103695</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572599103695</updated>
+      <workItem from="1572599105023" duration="6181000" />
+      <workItem from="1572756210965" duration="25142000" />
+      <workItem from="1572866071423" duration="17221000" />
+      <workItem from="1573013709881" duration="1423000" />
+      <workItem from="1573140509491" duration="7574000" />
+      <workItem from="1573195115249" duration="335000" />
+      <workItem from="1573378716180" duration="3824000" />
+      <workItem from="1573472606724" duration="2467000" />
+      <workItem from="1573747742168" duration="641000" />
+      <workItem from="1573788024665" duration="856000" />
+      <workItem from="1574838499255" duration="3067000" />
+      <workItem from="1575366716958" duration="4042000" />
+      <workItem from="1575445351387" duration="2742000" />
+      <workItem from="1575613469326" duration="1995000" />
+      <workItem from="1575788908147" duration="671000" />
+      <workItem from="1575791481081" duration="4990000" />
+      <workItem from="1575878339078" duration="665000" />
+      <workItem from="1575966754405" duration="7400000" />
+      <workItem from="1575994408728" duration="10611000" />
+      <workItem from="1576052369090" duration="4271000" />
+      <workItem from="1576087932846" duration="3424000" />
+      <workItem from="1576138974404" duration="3340000" />
+      <workItem from="1576225538312" duration="9367000" />
+      <workItem from="1576405518884" duration="6909000" />
+      <workItem from="1576440927375" duration="4206000" />
+      <workItem from="1576562816032" duration="12083000" />
+      <workItem from="1576727752490" duration="3670000" />
+      <workItem from="1576838929141" duration="14743000" />
+      <workItem from="1577170837304" duration="5013000" />
+      <workItem from="1577191326737" duration="5427000" />
+      <workItem from="1577350767443" duration="1210000" />
+      <workItem from="1577427861482" duration="2981000" />
+      <workItem from="1577520035322" duration="16884000" />
+      <workItem from="1577944341793" duration="9041000" />
+      <workItem from="1578298280496" duration="4294000" />
+      <workItem from="1578381873342" duration="21380000" />
+      <workItem from="1578570265852" duration="653000" />
+      <workItem from="1578722247114" duration="7000000" />
+      <workItem from="1578912321916" duration="1424000" />
+      <workItem from="1579164593376" duration="1842000" />
+      <workItem from="1579180700821" duration="241000" />
+      <workItem from="1579258852083" duration="2556000" />
+      <workItem from="1579512352203" duration="200000" />
+      <workItem from="1579536100189" duration="3997000" />
+      <workItem from="1579937368111" duration="6540000" />
+      <workItem from="1580110833921" duration="102000" />
+      <workItem from="1580184446411" duration="4302000" />
+      <workItem from="1580291056430" duration="8765000" />
+      <workItem from="1580446196933" duration="309000" />
+      <workItem from="1580536768561" duration="1925000" />
+      <workItem from="1580539412776" duration="423000" />
+      <workItem from="1580540835604" duration="25007000" />
+      <workItem from="1580800495861" duration="3118000" />
+      <workItem from="1580813504024" duration="3496000" />
+      <workItem from="1580906800999" duration="2866000" />
+      <workItem from="1580909852155" duration="2398000" />
+      <workItem from="1580912874276" duration="1145000" />
+      <workItem from="1580916589659" duration="2694000" />
+      <workItem from="1580961630816" duration="1110000" />
+    </task>
+    <task id="LOCAL-00005" summary="VPN package added. Parent class for VPN clients added.">
+      <created>1572602791215</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1572602791215</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Interface to OpenVPN added.">
+      <created>1572604143484</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572604143484</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Interface to Cisco VPN client added.">
+      <created>1572604657396</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1572604657396</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Interface to Cisco VPN client added.">
+      <created>1572641950001</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572641950001</updated>
+    </task>
+    <task id="LOCAL-00009" summary="SAP package refactored.">
+      <created>1572756475949</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1572756475949</updated>
+    </task>
+    <task id="LOCAL-00010" summary="SAP package refactored.">
+      <created>1572756504250</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1572756504250</updated>
+    </task>
+    <task id="LOCAL-00011" summary="SAP parent class added to provide possibility&#10;to read connection parameters from SAP GUI Landscape descriptor.">
+      <created>1572764805213</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1572764805213</updated>
+    </task>
+    <task id="LOCAL-00012" summary="SAP parent class added to provide possibility&#10;to read connection parameters from SAP GUI Landscape descriptor.">
+      <created>1572771915681</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1572771915681</updated>
+    </task>
+    <task id="LOCAL-00013" summary="SAP parent class added to provide possibility&#10;to read connection parameters from SAP GUI Landscape descriptor.">
+      <created>1572772317173</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1572772317173</updated>
+    </task>
+    <task id="LOCAL-00014" summary="refact: SAPGUI.close() refactored">
+      <created>1572777343902</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1572777343902</updated>
+    </task>
+    <task id="LOCAL-00015" summary="refact:&#10;SAPRFC to support parent class;&#10;SAPRFC.readtable() moved to sapwiki project;&#10;SAP to get hostname, port and sysnr;">
+      <created>1572790175645</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1572790175645</updated>
+    </task>
+    <task id="LOCAL-00016" summary="refact: VPN package - minor fixes">
+      <created>1572844595002</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1572844595002</updated>
+    </task>
+    <task id="LOCAL-00017" summary="refact: connector module - minor fixes">
+      <created>1572870977127</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1572870977127</updated>
+    </task>
+    <task id="LOCAL-00018" summary="fea: added RSA Security GUI feature">
+      <created>1572880278865</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1572880278865</updated>
+    </task>
+    <task id="LOCAL-00019" summary="refact: widgets package added;&#10;refact: controls, options manager, RSA security moved to widgets package">
+      <created>1572883036231</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1572883036231</updated>
+    </task>
+    <task id="LOCAL-00020" summary="fea: validating entry widget added;&#10;fea: validation (length and digits) of security ID entry added;">
+      <created>1572930851312</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1572930851312</updated>
+    </task>
+    <task id="LOCAL-00021" summary="fea: logging feature added">
+      <created>1573188851626</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1573188851627</updated>
+    </task>
+    <task id="LOCAL-00022" summary="fea: teamviewer connector added">
+      <created>1574842249114</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1574842249114</updated>
+    </task>
+    <task id="LOCAL-00023" summary="def: minor fixes">
+      <created>1575369212083</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1575369212083</updated>
+    </task>
+    <task id="LOCAL-00024" summary="fea: Forticlient added&#10;refact: switch states refactored">
+      <created>1576042086523</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1576042086523</updated>
+    </task>
+    <task id="LOCAL-00025" summary="fix: minor fixes">
+      <created>1576058103733</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1576058103733</updated>
+    </task>
+    <task id="LOCAL-00026" summary="fea: SAP landscape implemented">
+      <created>1576400476611</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1576400476611</updated>
+    </task>
+    <task id="LOCAL-00027" summary="fea: SAP Logon widget added">
+      <created>1576405549453</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1576405549454</updated>
+    </task>
+    <task id="LOCAL-00028" summary="fea: SAP Logon widget added">
+      <created>1576416118566</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1576416118566</updated>
+    </task>
+    <task id="LOCAL-00029" summary="fea: SAP Logon widget - connect by double click added">
+      <created>1576522827860</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1576522827860</updated>
+    </task>
+    <task id="LOCAL-00030" summary="refact: SAP landscape refactored">
+      <created>1576563803814</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1576563803814</updated>
+    </task>
+    <task id="LOCAL-00031" summary="fea: connect by enter added for none-sap base connectors">
+      <created>1576920804079</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1576920804079</updated>
+    </task>
+    <task id="LOCAL-00032" summary="fea: RSA - disable connect if security key is not entered.">
+      <created>1577004005346</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1577004005346</updated>
+    </task>
+    <task id="LOCAL-00033" summary="refact: connector refactored using MVC">
+      <created>1577083086960</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1577083086960</updated>
+    </task>
+    <task id="LOCAL-00034" summary="FIXME: SAP Logon double click">
+      <created>1577170930746</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1577170930746</updated>
+    </task>
+    <task id="LOCAL-00035" summary="TODO: refactor RSA connect feature validation">
+      <created>1577172768348</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1577172768348</updated>
+    </task>
+    <task id="LOCAL-00036" summary="refact: connector refactored using MVC framework">
+      <created>1578382227012</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1578382227012</updated>
+    </task>
+    <task id="LOCAL-00037" summary="fea: config parser added">
+      <created>1578387149955</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1578387149955</updated>
+    </task>
+    <task id="LOCAL-00038" summary="reafact: widgets padding refactored">
+      <created>1578387916306</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1578387916306</updated>
+    </task>
+    <task id="LOCAL-00039" summary="rfix: forticlient minor fixes">
+      <created>1578388001016</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1578388001016</updated>
+    </task>
+    <task id="LOCAL-00040" summary="fix: teamviewer - minor fix">
+      <created>1578388743272</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1578388743272</updated>
+    </task>
+    <task id="LOCAL-00041" summary="fea: sapbase - support logon language added">
+      <created>1578391428705</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1578391428705</updated>
+    </task>
+    <task id="LOCAL-00042" summary="refact: specify where a Tkinter window opens">
+      <created>1578393816148</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1578393816148</updated>
+    </task>
+    <task id="LOCAL-00043" summary="refact: RDP and Teamviewer refactored and moved to RDC">
+      <created>1578468189377</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1578468189377</updated>
+    </task>
+    <task id="LOCAL-00044" summary="refact: Forticlient - vpn name is now mandatory to init object">
+      <created>1578468713001</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1578468713001</updated>
+    </task>
+    <task id="LOCAL-00045" summary="fea: SAPLogon - disable connect button if service is not selected.">
+      <created>1578469508942</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1578469508942</updated>
+    </task>
+    <task id="LOCAL-00046" summary="fea: status bar added">
+      <created>1579937949790</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1579937949790</updated>
+    </task>
+    <task id="LOCAL-00047" summary="fea: status bar added">
+      <created>1580020994080</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1580020994080</updated>
+    </task>
+    <task id="LOCAL-00048" summary="fea: status handling added">
+      <created>1580290619552</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1580290619552</updated>
+    </task>
+    <task id="LOCAL-00049" summary="fea: Pulse vpn added&#10;fixes: status handling">
+      <created>1580402644843</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1580402644843</updated>
+    </task>
+    <task id="LOCAL-00050" summary="fea: close without delay when disconnected">
+      <created>1580537378528</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1580537378530</updated>
+    </task>
+    <task id="LOCAL-00051" summary="fixme: minor fixes">
+      <created>1580537826049</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1580537826049</updated>
+    </task>
+    <task id="LOCAL-00052" summary="fixme: SAPlogon - Connect by enter does not work">
+      <created>1580540888595</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1580540888595</updated>
+    </task>
+    <task id="LOCAL-00053" summary="refact: gui moved to widgets">
+      <created>1580541139020</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1580541139020</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="312203000" />
+  </component>
+  <component name="TodoView" selected-index="4">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.44504505" visible="true" weight="0.13326226" />
+      <window_info id="Structure" order="1" sideWeight="0.55495495" side_tool="true" weight="0.3944563" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33802816" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Python Console" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="12" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="13" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" visible="true" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="SciView" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="fea: SAP Logon widget added" />
+    <MESSAGE value="fea: SAP Logon widget - connect by double click added" />
+    <MESSAGE value="refact: SAP landscape refactored" />
+    <MESSAGE value="fea: connect by enter added for none-sap base connectors" />
+    <MESSAGE value="fea: RSA - disable connect if security key is not entered." />
+    <MESSAGE value="refact: connector refactored using MVC" />
+    <MESSAGE value="FIXME: SAP Logon double click" />
+    <MESSAGE value="TODO: refactor RSA connect feature validation" />
+    <MESSAGE value="refact: connector refactored using MVC framework" />
+    <MESSAGE value="fea: config parser added" />
+    <MESSAGE value="reafact: widgets padding refactored" />
+    <MESSAGE value="rfix: forticlient minor fixes" />
+    <MESSAGE value="fix: teamviewer - minor fix" />
+    <MESSAGE value="fea: sapbase - support logon language added" />
+    <MESSAGE value="refact: specify where a Tkinter window opens" />
+    <MESSAGE value="refact: RDP and Teamviewer refactored and moved to RDC" />
+    <MESSAGE value="refact: Forticlient - vpn name is now mandatory to init object" />
+    <MESSAGE value="fea: SAPLogon - disable connect button if service is not selected." />
+    <MESSAGE value="fea: status bar added" />
+    <MESSAGE value="fea: status handling added" />
+    <MESSAGE value="fea: Pulse vpn added&#10;fixes: status handling" />
+    <MESSAGE value="fea: close without delay when disconnected" />
+    <MESSAGE value="fixme: minor fixes" />
+    <MESSAGE value="fixme: SAPlogon - Connect by enter does not work" />
+    <MESSAGE value="refact: gui moved to widgets" />
+    <option name="LAST_COMMIT_MESSAGE" value="refact: gui moved to widgets" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/widgets/logger.py</url>
+          <line>26</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch_38.py</url>
+          <line>20</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/widgets/logger.py</url>
+          <line>9</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/_tests/__old/_test_teamviewer.py</url>
+          <line>7</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$APPLICATION_CONFIG_DIR$/scratches/scratch_48.py</url>
+          <line>5</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/sap/sapgui.py</url>
+          <line>74</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/controllers/saplogon.py</url>
+          <line>16</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/connectors$security_id_entry.coverage" NAME="security_id_entry Coverage Results" MODIFIED="1572930152498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/widgets" />
+    <SUITE FILE_PATH="coverage/connectors$rsabase.coverage" NAME="rsabase Coverage Results" MODIFIED="1578298449166" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/connector/controllers" />
+    <SUITE FILE_PATH="coverage/connectors$sapbase.coverage" NAME="sapbase Coverage Results" MODIFIED="1580623987433" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sap" />
+    <SUITE FILE_PATH="coverage/connectors$openvpn.coverage" NAME="openvpn Coverage Results" MODIFIED="1578390267200" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vpn" />
+    <SUITE FILE_PATH="coverage/connectors$__init__.coverage" NAME="__init__ Coverage Results" MODIFIED="1580722992922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/connector$connector_pyw.coverage" NAME="connector.pyw Coverage Results" MODIFIED="1580962044777" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_tests/_openvpn_connector" />
+    <SUITE FILE_PATH="coverage/connectors$_test_sap_landscape.coverage" NAME="_test_sap_landscape Coverage Results" MODIFIED="1576568472236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_tests" />
+    <SUITE FILE_PATH="coverage/connectors$options.coverage" NAME="options Coverage Results" MODIFIED="1580624962121" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/connector/widgets" />
+    <SUITE FILE_PATH="coverage/connectors$test_app.coverage" NAME="test_app Coverage Results" MODIFIED="1578722575845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/connector" />
+    <SUITE FILE_PATH="coverage/connector$pulse.coverage" NAME="pulse Coverage Results" MODIFIED="1580916657629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vpn" />
+    <SUITE FILE_PATH="coverage/connectors$_test_rdc_connector.coverage" NAME="_test_rdc_connector Coverage Results" MODIFIED="1580723450508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_tests/_rdc_connector" />
+    <SUITE FILE_PATH="coverage/connectors$scratch_47.coverage" NAME="scratch_47 Coverage Results" MODIFIED="1580184800555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/connectors$scratch_38.coverage" NAME="scratch_38 Coverage Results" MODIFIED="1576000737302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/connectors$sapbase__1_.coverage" NAME="sapbase (1) Coverage Results" MODIFIED="1578383598586" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sap" />
+    <SUITE FILE_PATH="coverage/connectors$__init____1_.coverage" NAME="__init__ (1) Coverage Results" MODIFIED="1580631399918" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/connector/controllers" />
+    <SUITE FILE_PATH="coverage/connectors$scratch_39.coverage" NAME="scratch_39 Coverage Results" MODIFIED="1575998024238" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/connectors$_test_teamviewer.coverage" NAME="_test_teamviewer Coverage Results" MODIFIED="1580722508827" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_tests/_test_rdc" />
+    <SUITE FILE_PATH="coverage/connectors$scratch_4.coverage" NAME="scratch_4 Coverage Results" MODIFIED="1575798832798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/connectors$forticlient.coverage" NAME="forticlient Coverage Results" MODIFIED="1575994548694" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vpn" />
+    <SUITE FILE_PATH="coverage/connectors$saplogon.coverage" NAME="saplogon Coverage Results" MODIFIED="1580628718252" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/connector/controllers" />
+    <SUITE FILE_PATH="coverage/connectors$observable.coverage" NAME="observable Coverage Results" MODIFIED="1580628058125" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/connector/models" />
+    <SUITE FILE_PATH="coverage/connectors$teamviewer.coverage" NAME="teamviewer Coverage Results" MODIFIED="1574841838192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/connectors$gui.coverage" NAME="gui Coverage Results" MODIFIED="1580625020512" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/connector/widgets" />
+    <SUITE FILE_PATH="coverage/connectors$_test_baseline.coverage" NAME="_test_baseline Coverage Results" MODIFIED="1580720107464" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_tests/_Baseline" />
+    <SUITE FILE_PATH="coverage/connectors$controller.coverage" NAME="controller Coverage Results" MODIFIED="1577042454550" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_connector" />
+    <SUITE FILE_PATH="coverage/connector$_text_pulse_pyw.coverage" NAME="_text_pulse.pyw Coverage Results" MODIFIED="1580917802945" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_tests/_pulse_based" />
+    <SUITE FILE_PATH="coverage/connectors$base__1_.coverage" NAME="base (1) Coverage Results" MODIFIED="1580628575922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/connector/controllers" />
+    <SUITE FILE_PATH="coverage/connectors$_test_forticlient.coverage" NAME="_test_forticlient Coverage Results" MODIFIED="1576041926553" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_tests" />
+    <SUITE FILE_PATH="coverage/connectors$test_app__1_.coverage" NAME="test_app (1) Coverage Results" MODIFIED="1577080853504" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/connector" />
+    <SUITE FILE_PATH="coverage/connector$_test_sap_connector.coverage" NAME="_test_sap_connector Coverage Results" MODIFIED="1580918110745" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_tests/_sap_connector" />
+    <SUITE FILE_PATH="coverage/connectors$main.coverage" NAME="main Coverage Results" MODIFIED="1580628880044" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/connector/controllers" />
+    <SUITE FILE_PATH="coverage/connectors$_test_sap_connector.coverage" NAME="_test_sap_connector Coverage Results" MODIFIED="1580724212738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_tests/_sap_connector" />
+    <SUITE FILE_PATH="coverage/connectors$scratch_46.coverage" NAME="scratch_46 Coverage Results" MODIFIED="1580100593155" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/connectors$__init____2_.coverage" NAME="__init__ (2) Coverage Results" MODIFIED="1580718267605" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/controllers" />
+    <SUITE FILE_PATH="coverage/connectors$logger.coverage" NAME="logger Coverage Results" MODIFIED="1573140619136" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/widgets" />
+    <SUITE FILE_PATH="coverage/connectors$_test_rdp.coverage" NAME="_test_rdp Coverage Results" MODIFIED="1578467368004" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_tests" />
+    <SUITE FILE_PATH="coverage/connectors$_test_vpn.coverage" NAME="_test_vpn Coverage Results" MODIFIED="1575994558677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_tests" />
+    <SUITE FILE_PATH="coverage/connectors$saplogon__1_.coverage" NAME="saplogon (1) Coverage Results" MODIFIED="1576408739881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/widgets" />
+    <SUITE FILE_PATH="coverage/connectors$status.coverage" NAME="status Coverage Results" MODIFIED="1580718469339" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/connectors$base.coverage" NAME="base Coverage Results" MODIFIED="1580633015887" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/connector/controllers" />
+    <SUITE FILE_PATH="coverage/connectors$sapgui.coverage" NAME="sapgui Coverage Results" MODIFIED="1572770257193" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sap" />
+    <SUITE FILE_PATH="coverage/connectors$log.coverage" NAME="log Coverage Results" MODIFIED="1573141084076" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/widgets" />
+    <SUITE FILE_PATH="coverage/connectors$rsa.coverage" NAME="rsa Coverage Results" MODIFIED="1576401820328" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/widgets" />
+    <SUITE FILE_PATH="coverage/connectors$_test_sap.coverage" NAME="_test_sap Coverage Results" MODIFIED="1576585534525" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_tests" />
+    <SUITE FILE_PATH="coverage/connectors$connector.coverage" NAME="connector Coverage Results" MODIFIED="1580632533729" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/connector" />
+    <SUITE FILE_PATH="coverage/connectors$status_bar.coverage" NAME="status_bar Coverage Results" MODIFIED="1577176020735" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/connector/widgets" />
+    <SUITE FILE_PATH="coverage/connectors$connector__1_.coverage" NAME="connector (1) Coverage Results" MODIFIED="1580721852753" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/connectors$_test_baseline__1_.coverage" NAME="_test_baseline (1) Coverage Results" MODIFIED="1580723291728" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_tests/_baseline" />
+    <SUITE FILE_PATH="coverage/connectors$app.coverage" NAME="app Coverage Results" MODIFIED="1580618462986" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/connector/models" />
+    <SUITE FILE_PATH="coverage/connectors$__init____3_.coverage" NAME="__init__ (3) Coverage Results" MODIFIED="1580627930498" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/connector" />
+    <SUITE FILE_PATH="coverage/connectors$scratch_48.coverage" NAME="scratch_48 Coverage Results" MODIFIED="1580719974192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
+    <SUITE FILE_PATH="coverage/connectors$temp.coverage" NAME="temp Coverage Results" MODIFIED="1572762614682" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sap" />
+    <SUITE FILE_PATH="coverage/connectors$model.coverage" NAME="model Coverage Results" MODIFIED="1580721520421" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/models" />
+    <SUITE FILE_PATH="coverage/connectors$sap_service_list.coverage" NAME="sap_service_list Coverage Results" MODIFIED="1576417225025" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/widgets" />
+    <SUITE FILE_PATH="coverage/connectors$saplandscape.coverage" NAME="saplandscape Coverage Results" MODIFIED="1580628339817" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sap" />
+    <SUITE FILE_PATH="coverage/connectors$_test_connector.coverage" NAME="_test_connector Coverage Results" MODIFIED="1580622959077" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_tests" />
+    <SUITE FILE_PATH="coverage/connectors$sap.coverage" NAME="sap Coverage Results" MODIFIED="1576569025038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sap" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/widgets/controls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/widgets/rsa.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/widgets/security_id_entry.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="5" selection-start-line="9" selection-start-column="5" selection-end-line="9" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/widgets/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/widgets/saplogon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/widgets/status_bar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#42#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_old/test_app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_tests/__old/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="21" selection-start-line="1" selection-start-column="21" selection-end-line="1" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_tests/__old/_test_connector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/scratches/scratch_48.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_tests/_baseline_connector/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/status.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="473">
+          <caret line="45" selection-start-line="45" selection-end-line="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_tests/_rdc_connector/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="16" lean-forward="true" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_tests/_rdc_connector/teamviewer.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_tests/_rdc/_test_teamviewer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_tests/_rdc/teamviewer.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_tests/_rdc_connector/_test_rdc_connector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/rsabase.py" />
+    <entry file="file://$PROJECT_DIR$/controllers/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_tests/_baseline_connector/_test_baseline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rdc/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <element signature="e#168#198#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rdc/teamviewer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rdc/rdp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="53" lean-forward="true" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_tests/_sap_connector/config.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="10" lean-forward="true" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="e#127#157#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sap/saplandscape.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-666">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="e#140#159#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_tests/_sap_connector/sap.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/baseline.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sap/sapgui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <element signature="e#140#168#0" expanded="true" />
+            <marker date="1580802470766" expanded="true" signature="776:806" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/widgets/sap_service_list.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/rdc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vpn/cisco.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vpn/openvpn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vpn/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1147">
+          <caret line="68" selection-start-line="68" selection-end-line="68" />
+          <folding>
+            <element signature="e#134#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vpn/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/vpn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="49" lean-forward="true" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
+          <folding>
+            <element signature="e#127#164#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vpn/forticlient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="55" lean-forward="true" selection-start-line="55" selection-end-line="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_tests/_pulse_based/_text_pulse.pyw">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_tests/_sap_connector/_test_sap_connector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_tests/_openvpn_connector/config.ini">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vpn/pulse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="14" column="55" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/to_do.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sap/sapbase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="30" column="28" lean-forward="true" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
+          <folding>
+            <element signature="e#139#176#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/tkinter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="705">
+          <caret line="1701" selection-start-line="1701" selection-end-line="1701" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/widgets/gui.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="49" column="70" lean-forward="true" selection-start-line="49" selection-start-column="70" selection-end-line="49" selection-end-column="70" />
+          <folding>
+            <element signature="e#123#145#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_tests/_openvpn_connector/connector.pyw">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/saplogon.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+          <folding>
+            <element signature="e#132#154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

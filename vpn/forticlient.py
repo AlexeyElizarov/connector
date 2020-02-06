@@ -7,10 +7,12 @@ Provides basic interface to FortiClient: open, close, connect, disconnect
 __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
 
+from time import sleep
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import Select
-from time import sleep
+
 from vpn import VPN
 
 
@@ -21,12 +23,13 @@ class FortiClient(VPN):
 
     _default_driver = r'C:\Program Files\Fortinet\FortiClient\FortiClient.exe'
     _is_connected = False
+    _config = 'forticlient.ini'
 
-    def __init__(self, vpn_name):
+    def __init__(self):
+        super().__init__()
         self._chrome_options = Options()
         self._chrome_options.binary_location = self._default_driver
         self._chrome_options.add_argument('--remote-debugging-port=12345')
-        self.vpn_name = vpn_name
 
     def open(self):
         """

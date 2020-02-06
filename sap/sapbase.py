@@ -7,8 +7,9 @@ Implements class for SAP backend interface.
 __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
 
-from sap import Landscape
 from configparser import ConfigParser
+
+from sap import Landscape
 
 
 class SAP:
@@ -18,7 +19,7 @@ class SAP:
     The main purpose of the class is to handle SAP connection parameters.
     """
 
-    _config = None
+    _config = 'sap.ini'
 
     def __init__(self, node):
         """
@@ -27,16 +28,12 @@ class SAP:
         """
 
         self._saplogon = Landscape(node)
+        self._parse_config()
         self.connections = []
 
-    @property
-    def config(self):
-        return self._config
-
-    @config.setter
-    def config(self, value):
+    def _parse_config(self):
         config = ConfigParser()
-        config.read(value)
+        config.read(self._config)
 
         for service in self.services:
 

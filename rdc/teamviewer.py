@@ -17,6 +17,7 @@ class Teamviewer(RDC):
 
     # A default path to Teamviewer
     _driver = r'C:\Program Files (x86)\TeamViewer\TeamViewer.exe'
+    _config = 'teamviewer.ini'
 
     @property
     def open_command(self):

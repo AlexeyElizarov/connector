@@ -15,6 +15,7 @@ class Cisco(VPN):
     """
     # Default Cisco VPN Driver
     _driver = r'C:\Program Files (x86)\Cisco Systems\VPN Client\vpnclient.exe'
+    _config = 'cisco.ini'
 
     @property
     def connect_command(self):
