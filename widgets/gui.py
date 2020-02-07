@@ -31,7 +31,7 @@ class GUI(Tk):
 
         # Initialization of widgets
         self.controls = FrmControls(self)
-        self.access = FrmAccess(self)
+        self.access = FrmAccess(self, self.controller)
         self.options = FrmOptions(self)
         self.status_bar = FrmStatusBar(self)
         self.controller.model.status.register(self.status_bar)
