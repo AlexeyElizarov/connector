@@ -13,11 +13,7 @@ from controllers.base import Controller
 
 class SAPLogon(Controller):
 
-    def _connect(self, event):
-        self._select_service(event)
-        self.connect()
-
-    def _select_service(self, event):
+    def select_service(self, event):
         """
         Updates selected SAP service.
         :param event: None
@@ -33,11 +29,13 @@ class SAPLogon(Controller):
         else:
             self.view.controls.btn_connect['state'] = 'disabled'
 
-    def connect(self):
+    def connect(self, event=None):
         """
         Connects to VPN and opens SAP GUI session.
         :return: None.
         """
+
+        self.select_service(event)
 
         if self.model.status.code < 0:
             self.model.status.code *= -1
@@ -95,7 +93,6 @@ class SAPLogon(Controller):
         self.view.controls.btn_disconnect['state'] = 'disabled'
         # self.model.status.post('Disconnected')
         self.model.status.code = -1
-
 
     def close(self):
         """

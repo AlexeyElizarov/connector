@@ -49,7 +49,7 @@ class GUI(Tk):
         # Default bindings
         self.controls.btn_connect['command'] = self.controller.connect
         if not self.controller.model.app.layout == 'sap':
-            self.bind('<Return>', self.controller._connect)
+            self.bind('<Return>', self.controller.connect)
         self.controls.btn_disconnect['command'] = self.controller.disconnect
         self.controls.btn_close['command'] = self.controller.close
 
@@ -64,9 +64,8 @@ class GUI(Tk):
             self.controls.btn_connect['state'] = 'disabled'
 
         # Bindings
-        self.saplogon.lbx_sap_services.bind('<<ListboxSelect>>', self.controller._select_service)
-        self.saplogon.lbx_sap_services.bind('<Double-Button-1>', self.controller._connect)
-        self.saplogon.lbx_sap_services.bind('<Return>', self.controller._connect)
+        self.saplogon.lbx_sap_services.bind('<Double-Button-1>', self.controller.connect)
+        self.saplogon.lbx_sap_services.bind('<Return>', self.controller.connect)
 
     def _rsa_layout(self):
         """
