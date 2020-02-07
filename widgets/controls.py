@@ -1,5 +1,4 @@
 from tkinter import ttk
-
 from widgets import PADX, PADY
 
 
@@ -9,8 +8,7 @@ class FrmControls(ttk.Frame):
     """
 
     def __init__(self, root):
-        ttk.Frame.__init__(self, root)
-
+        super().__init__(root)
         self.btn_connect = ttk.Button(self, text='Connect')
         self.btn_disconnect = ttk.Button(self, text='Disconnect')
         self.btn_disconnect['state'] = 'disabled'

@@ -9,6 +9,7 @@ from widgets.saplogon import LFrSAPLogon
 from widgets.security_id_entry import EntSecurityId
 from widgets.status_bar import FrmStatusBar
 from widgets.validating_entry import EntValidating
+from widgets.access import FrmAccess
 from widgets.gui import GUI
 # from connector.widgets.log import FrmLog
 # from connector.widgets.logger import TextHandler

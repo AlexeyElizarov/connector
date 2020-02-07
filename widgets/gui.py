@@ -8,7 +8,7 @@ __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
 from tkinter import Tk
 
-from widgets import FrmOptions, FrmControls, FrmStatusBar, LFrSAPLogon, LFrRSA, PADX, PADY
+from widgets import FrmOptions, FrmControls, FrmStatusBar, LFrSAPLogon, LFrRSA, FrmAccess, PADX, PADY
 
 
 class GUI(Tk):
@@ -31,6 +31,7 @@ class GUI(Tk):
 
         # Initialization of widgets
         self.controls = FrmControls(self)
+        self.access = FrmAccess(self)
         self.options = FrmOptions(self)
         self.status_bar = FrmStatusBar(self)
         self.controller.model.status.register(self.status_bar)
@@ -43,6 +44,10 @@ class GUI(Tk):
 
         # Geometry management
         self.options.pack(expand=True, fill='x')
+
+        if self.controller.model.app.access_url:
+            self.access.pack(expand=True, fill='x', padx=PADX, pady=PADY)
+
         self.controls.pack(expand=True, fill='x')
         self.status_bar.pack(expand=True, fill='x', padx=PADX, pady=PADY)
 

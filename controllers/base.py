@@ -7,6 +7,7 @@ Implements base controller class
 __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
 from widgets import GUI
+import webbrowser
 
 
 class Controller:
@@ -14,6 +15,9 @@ class Controller:
     def __init__(self, model):
         self.model = model
         self.view = GUI(self)
+
+    def open_url(self, event):
+        webbrowser.open_new(self.model.app.access_url)
 
     @staticmethod
     def switch(func):
