@@ -1,11 +1,5 @@
-TODO: read app settings from config
-    TITLE
-    LAYOUT
-    ACCESS PAGE
-
-TODO: Add reference to access page from application
-
-
+TODO: refact VPN
+    is_connected
 TODO: minimize to sys tray when connected.
 TODO: account management
 TODO: RM access parsing

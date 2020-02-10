@@ -1,6 +1,7 @@
-from vpn import Cisco, FortiClient, OpenVPN, Pulse
+from vpn import Cisco, FortiClient, OpenVPN, Pulse, CheckPoint
 
 VPN = {'cisco': Cisco,
        'forticlient': FortiClient,
        'openvpn': OpenVPN,
-       'pulse': Pulse}
+       'pulse': Pulse,
+       'checkpoint': CheckPoint}

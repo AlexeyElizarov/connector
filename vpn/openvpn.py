@@ -6,14 +6,14 @@ Provides interface to OpenVPN client.
 
 __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
-from vpn import VPN
+from vpn import Desktop
 
 
-class OpenVPN(VPN):
+class OpenVPN(Desktop):
     """
     Provides interface to OpenVPN client.
     """
-    # Default Open VPN client
+
     _driver = 'openvpn-gui'
     _config = 'openvpn.ini'
 

@@ -9,7 +9,7 @@ __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 from controllers import Controller
 
 
-class Baseline(Controller):
+class RDCBased(Controller):
 
     def _connect(self, event):
         # Connect if connection button is not disabled.

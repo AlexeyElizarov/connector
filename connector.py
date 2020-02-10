@@ -7,7 +7,7 @@ Implements Connector base class.
 __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
 from models.model import Model
-from controllers import Baseline, SAPLogon
+from controllers import RDCBased, SAPLogon
 
 
 class Connector:
@@ -18,7 +18,7 @@ class Connector:
         if self.model.app.layout == 'sap':
             self.controller = SAPLogon(self.model)
         elif self.model.app.layout == 'default':
-            self.controller = Baseline(self.model)
+            self.controller = RDCBased(self.model)
 
         self.controller.run()
 

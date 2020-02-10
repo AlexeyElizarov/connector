@@ -6,14 +6,14 @@ Provides interface to Cisco VPN Client.
 
 __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
-from vpn import VPN
+from vpn import Desktop
 
 
-class Cisco(VPN):
+class Cisco(Desktop):
     """
     Provides interface to Cisco VPN Client.
     """
-    # Default Cisco VPN Driver
+
     _driver = r'C:\Program Files (x86)\Cisco Systems\VPN Client\vpnclient.exe'
     _config = 'cisco.ini'
 

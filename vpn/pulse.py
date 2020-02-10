@@ -8,16 +8,15 @@ __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
 
 from time import sleep
-from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.by import By
 from selenium.common.exceptions import TimeoutException
 from selenium.webdriver.chrome.options import Options
-from vpn import VPN
+from vpn import WebBased
 
 
-class Pulse(VPN):
+class Pulse(WebBased):
 
     _config = 'pulse.ini'
     _options = Options()
@@ -26,47 +25,50 @@ class Pulse(VPN):
     _preferences = {'protocol_handler.excluded_schemes': {'pulsesecure': False}}
     _options.add_experimental_option('prefs', _preferences)
     _delay = 60
-    _browser = None
+    _webdriver = None
 
-
+    @WebBased.open
     def connect(self):
 
-        if not self._browser:
+        # if not self._webdriver:
+        #
+        #     self._webdriver = webdriver.Chrome(chrome_options=self._options)
+        #     self._webdriver.get(getattr(self, 'portal'))
 
-            self._browser = webdriver.Chrome(chrome_options=self._options)
-            self._browser.get(getattr(self, 'portal'))
+        try:
+            username = WebDriverWait(self._webdriver, self._delay).until(EC.presence_of_element_located((By.NAME, 'username')))
+            password = WebDriverWait(self._webdriver, self._delay).until(EC.presence_of_element_located((By.NAME, 'password')))
+            submit = WebDriverWait(self._webdriver, self._delay).until(EC.presence_of_element_located((By.NAME, 'btnSubmit')))
+        except TimeoutException as e:
+            print(e)
+        else:
+            username.send_keys(getattr(self, 'username'))
+            password.send_keys(getattr(self, 'password'))
+            submit.click()
 
+        tries = 0
+
+        for i in range(self._delay * 2):
             try:
-                username = WebDriverWait(self._browser, self._delay).until(EC.presence_of_element_located((By.NAME, 'username')))
-                password = WebDriverWait(self._browser, self._delay).until(EC.presence_of_element_located((By.NAME, 'password')))
-                submit = WebDriverWait(self._browser, self._delay).until(EC.presence_of_element_located((By.NAME, 'btnSubmit')))
-            except TimeoutException as e:
-                print(e)
-            else:
-                username.send_keys(getattr(self, 'username'))
-                password.send_keys(getattr(self, 'password'))
-                submit.click()
-
-            tries = 0
-
-            for i in range(self._delay * 2):
+                self._webdriver.find_element_by_name('imgNavSignOut')
+                return True
+            except Exception as e:
+                # Pulse Application Launcher not found.
                 try:
-                    self._browser.find_element_by_name('imgNavSignOut')
-                    return True
+                    if tries == 0:
+                        self._webdriver.find_element_by_link_text('Try Again').click()
+                        tries += 1
                 except Exception as e:
-                    # Pulse Application Launcher not found.
-                    try:
-                        if tries == 0:
-                            self._browser.find_element_by_link_text('Try Again').click()
-                            tries += 1
-                    except Exception as e:
-                        pass
-                    # Continue the session.
-                    try:
-                        self._browser.find_element_by_name('btnContinue').click()
-                    except Exception as e:
-                        pass
-                    sleep(1)
+                    pass
+                # Continue the session.
+                try:
+                    self._webdriver.find_element_by_name('btnContinue').click()
+                except Exception as e:
+                    pass
+                sleep(1)
 
+    @WebBased.close
     def disconnect(self):
-        self._browser.find_element_by_name('imgNavSignOut').click()
+
+        if self.is_connected:
+            self._webdriver.find_element_by_name('imgNavSignOut').click()
