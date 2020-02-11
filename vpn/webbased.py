@@ -38,11 +38,11 @@ class WebBased(VPN):
                 if self._options:
                     self._browser = self._webdriver(chrome_options=self._options)
                 else:
-                    self._webdriver = self._webdriver()
+                    self._browser = self._webdriver()
                 if getattr(self, 'portal', None):
-                    self._webdriver.get(self.portal)
+                    self._navigate(self.portal)
             func(self)
-            self.is_connected = True
+            self._update_status()
         return wrapped
 
     @abstractmethod
@@ -53,4 +53,20 @@ class WebBased(VPN):
     def disconnect(self):
         pass
 
+    @abstractmethod
+    def _update_status(self):
+        pass
 
+    def _navigate(self, url):
+        """
+        Navigates to a page given by the URL.
+        If the page cannot be loaded due to security reasons, explicitly confirms loading.
+        :param url: Page url
+        :return: None
+        """
+        self._browser.get(url)
+
+        try:
+            self._browser.get('javascript:document.getElementById("overridelink").click();')
+        except Exception as e:
+            print(type(e), e)

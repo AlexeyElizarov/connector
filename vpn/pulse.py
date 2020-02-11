@@ -30,21 +30,16 @@ class Pulse(WebBased):
     @WebBased.open
     def connect(self):
 
-        # if not self._webdriver:
-        #
-        #     self._webdriver = webdriver.Chrome(chrome_options=self._options)
-        #     self._webdriver.get(getattr(self, 'portal'))
-
         try:
-            username = WebDriverWait(self._webdriver, self._delay).until(EC.presence_of_element_located((By.NAME, 'username')))
-            password = WebDriverWait(self._webdriver, self._delay).until(EC.presence_of_element_located((By.NAME, 'password')))
-            submit = WebDriverWait(self._webdriver, self._delay).until(EC.presence_of_element_located((By.NAME, 'btnSubmit')))
+            ent_username = WebDriverWait(self._webdriver, self._delay).until(EC.presence_of_element_located((By.NAME, 'username')))
+            ent_password = WebDriverWait(self._webdriver, self._delay).until(EC.presence_of_element_located((By.NAME, 'password')))
+            btn_submit = WebDriverWait(self._webdriver, self._delay).until(EC.presence_of_element_located((By.NAME, 'btnSubmit')))
         except TimeoutException as e:
             print(e)
         else:
-            username.send_keys(getattr(self, 'username'))
-            password.send_keys(getattr(self, 'password'))
-            submit.click()
+            ent_username.send_keys(getattr(self, 'username'))
+            ent_password.send_keys(getattr(self, 'password'))
+            btn_submit.click()
 
         tries = 0
 

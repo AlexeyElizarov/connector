@@ -7,7 +7,7 @@ Provides basic interface to Check Point browser based VPN: connect, disconnect
 
 __author__ = 'Alexey Elizarov (alexei.elizarov@gmail.com)'
 
-from vpn import VPN
+from vpn import WebBased
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
@@ -16,27 +16,49 @@ from selenium.common.exceptions import TimeoutException
 from time import sleep
 
 
-class CheckPoint(VPN):
+class CheckPoint(WebBased):
 
     _config = 'checkpoint.ini'
-    _browser = webdriver.Ie()
+    _webdriver = webdriver.Ie
     _delay = 60
+    _ssl_network_extender = None
 
+    @WebBased.open
     def connect(self):
 
-        if not self._browser:
+        # Sign in to customer portal
+        try:
+            ent_username = WebDriverWait(self._browser, self._delay).until(EC.presence_of_element_located((By.NAME, 'userName')))
+            ent_password = WebDriverWait(self._browser, self._delay).until(EC.presence_of_element_located((By.NAME, 'loginInput')))
+            btn_submit = WebDriverWait(self._browser, self._delay).until(EC.presence_of_element_located((By.NAME, 'Login')))
+        except TimeoutException as e:
+            print(e)
+        else:
+            ent_username.send_keys(getattr(self, 'username'))
+            ent_password.send_keys(getattr(self, 'password'))
+            btn_submit.click()
 
-            try:
-                username = WebDriverWait(self._browser, self._delay).until(EC.presence_of_element_located((By.NAME, 'userName')))
-                password = WebDriverWait(self._browser, self._delay).until(EC.presence_of_element_located((By.NAME, 'loginInput')))
-                submit = WebDriverWait(self._browser, self._delay).until(EC.presence_of_element_located((By.NAME, 'Login')))
-            except TimeoutException as e:
-                print(e)
-            else:
-                username.send_keys(getattr(self, 'username'))
-                password.send_keys(getattr(self, 'password'))
-                submit.click()
+        # Connect to VPN
+        try:
+            btn_connect = WebDriverWait(self._browser, self._delay).until(EC.presence_of_element_located((By.XPATH, '//input[@value="Connect"]')))
+        except TimeoutException as e:
+            print(e)
+        else:
+            btn_connect.click()
 
+        sleep(5)
+
+        # Handle security issues with SSL Network Extender
+        try:
+            self._browser.switch_to.window(self._browser.window_handles[1])
+            self._browser.get('javascript:document.getElementById("overridelink").click();')
+        except Exception as e:
+            print(type(e), e)
+        finally:
+            self._browser.switch_to.window(self._browser.window_handles[0])
+
+
+    @WebBased.close
     def disconnect(self):
 
         # Log out from Araymond Mobile Access
@@ -50,6 +72,11 @@ class CheckPoint(VPN):
         signout = self._browser.find_element_by_id('doSignOut')
         signout.click()
 
-        # Quite browser
-        self._browser.quit()
+    def _update_status(self):
 
+        try:
+            WebDriverWait(self._browser, self._delay).until(EC.presence_of_element_located((By.XPATH, '//input[@value="Disconnect"]')))
+        except TimeoutException as e:
+            print(e)
+        else:
+            self.is_connected = True
