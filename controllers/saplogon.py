@@ -42,15 +42,15 @@ class SAPLogon(Controller):
         else:
             self.model.status.code += 1
 
-        # If saprouter has not been provided, connect to VPN and open SAP GUI.
-        if not getattr(self.model.sap.selected_service, 'routerid', None):
+        # If VPN service provided, connect to VPN first.
+        if getattr(self.model, 'vpn', None):
 
             # Check if application server is reachable. If it is not, then connect to VPN.
             if not self.model.sap.selected_service.is_reachable:
                 self.model.vpn.connect()
 
             # Check over time if application server is reachable. If it is, then open SAP GUI.
-            for i in range(15):
+            for i in range(30):
                 if self.model.sap.selected_service.is_reachable:
                     self.model.sap.selected_service.gui.open()
                     self.model.sap.connections.append(self.model.sap.selected_service)

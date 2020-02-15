@@ -35,6 +35,10 @@ class SAPLandscape:
         # Get SAP services using their IDs.
         for item in node.items:
             service = Service(root.xpath(f"//Service[@uuid='{getattr(item, 'serviceid')}']")[0])
+
+            if getattr(service, 'routerid', None):
+                service.router = Router(root.xpath(f"//Router[@uuid='{getattr(service, 'routerid')}']")[0])
+
             self.services.append(service)
 
 
@@ -45,6 +49,17 @@ class Element:
     def __init__(self, node):
         for key, value in node.items():
             setattr(self, key, value)
+
+
+class Router(Element):
+    """
+    Class for SAP Router
+    """
+    def __init__(self, node):
+        super().__init__(node)
+
+        # Get router host
+        self.host = getattr(self, 'router')[3:]
 
 
 class Node(Element):
@@ -74,6 +89,7 @@ class Service(Element):
 
         self.hostname, self.port = getattr(self, 'server').split(':')
         self.sysnr = self.port[2:]
+        self.router = None
 
         self.gui = GUI(self)
         self.rfc = RFC(self)
@@ -85,7 +101,12 @@ class Service(Element):
         :return: Returns True if SAP application server is reachable. Else - False.
         """
 
-        if getattr(self, 'server'):
+        if getattr(self, 'routerid', None):
+            response = Popen("ping -n 1 " + self.router.host, shell=True)
+            response.wait()
+            if response.poll() == 0:
+                return True
+        elif getattr(self, 'server'):
             response = Popen("ping -n 1 " + self.hostname, shell=True)
             response.wait()
             if response.poll() == 0:

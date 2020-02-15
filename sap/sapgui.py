@@ -72,7 +72,7 @@ class SAPGUI:
         """
 
         # Compose command line
-        command = f'"{self._sapshcut}" -system={self.service.hostname} -client={self.service.client} -sysname="{self.service.name}"'
+        command = f'"{self._sapshcut}" -system={self.service.systemid} -client={self.service.client} -sysname="{self.service.name}"'
 
         # If user supplied, add -user parameter to the command line
         if getattr(self.service, 'user', None):
