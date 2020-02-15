@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59b232c5-60a2-4da6-86b4-13e9e38f8177" name="Default Changelist" comment="">
+    <list default="true" id="59b232c5-60a2-4da6-86b4-13e9e38f8177" name="Default Changelist" comment="refat: VPN major refactoring&#10;fea: checkpoint SSL VPN added">
+      <change afterPath="$PROJECT_DIR$/vpn/barracuda.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/rdcbased.py" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/rdcbased.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vpn/checkpoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/vpn/checkpoint.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vpn/pulse.py" beforeDir="false" afterPath="$PROJECT_DIR$/vpn/pulse.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vpn/webbased.py" beforeDir="false" afterPath="$PROJECT_DIR$/vpn/webbased.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/to_do.txt" beforeDir="false" afterPath="$PROJECT_DIR$/to_do.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vpn/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/vpn/__init__.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,102 +14,51 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vpn/checkpoint.py">
+        <entry file="file://$PROJECT_DIR$/to_do.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="74" column="29" lean-forward="true" selection-start-line="74" selection-start-column="29" selection-end-line="74" selection-end-column="29" />
-              <folding>
-                <element signature="e#174#198#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_tests/_vpn_checkpoint/_test_vpn_checkpoint.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="4" column="21" lean-forward="true" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+            <state relative-caret-position="255">
+              <caret line="15" selection-start-line="15" selection-end-line="24" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/controllers/rdcbased.py">
+        <entry file="file://$PROJECT_DIR$/vpn/barracuda.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+            <state relative-caret-position="663">
+              <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vpn/webbased.py">
+        <entry file="file://$PROJECT_DIR$/_tests/_vpn_barracuda/_test_vpn_barracuda.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-100">
-              <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
+            <state relative-caret-position="85">
+              <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_tests/_vpn_barracuda/barracuda.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vpn/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
               <folding>
-                <element signature="e#136#155#0" expanded="true" />
+                <element signature="e#0#24#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/selenium/webdriver/support/expected_conditions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="986">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/selenium/webdriver/support/wait.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1156">
-              <caret line="70" selection-start-line="70" selection-end-line="70" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/tkinter/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28866">
-              <caret line="1701" selection-start-line="1701" selection-end-line="1701" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vpn/pulse.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-              <folding>
-                <element signature="e#175#197#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="16099">
-              <caret line="963" selection-start-line="963" selection-end-line="963" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/_tests/_vpn_checkpoint/checkpoint.ini">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -170,9 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/widgets/saplogon.py" />
-        <option value="$PROJECT_DIR$/widgets/status_bar.py" />
-        <option value="$PROJECT_DIR$/_tests/config.ini" />
         <option value="$PROJECT_DIR$/_tests/_Baseline/_test_baseline.py" />
         <option value="$PROJECT_DIR$/_tests/_Baseline/config.ini" />
         <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch_48.py" />
@@ -203,8 +148,6 @@
         <option value="$PROJECT_DIR$/widgets/access.py" />
         <option value="$PROJECT_DIR$/widgets/gui.py" />
         <option value="$PROJECT_DIR$/vpn/cisco.py" />
-        <option value="$PROJECT_DIR$/vpn/openvpn.py" />
-        <option value="$PROJECT_DIR$/to_do.txt" />
         <option value="$PROJECT_DIR$/vpn/base.py" />
         <option value="$PROJECT_DIR$/vpn/desktop.py" />
         <option value="$PROJECT_DIR$/_tests/_pulse_based/_text_pulse.pyw" />
@@ -212,7 +155,6 @@
         <option value="$PROJECT_DIR$/controllers/baseline.py" />
         <option value="$PROJECT_DIR$/controllers/__init__.py" />
         <option value="$PROJECT_DIR$/connector.py" />
-        <option value="$PROJECT_DIR$/vpn/__init__.py" />
         <option value="$PROJECT_DIR$/models/vpn.py" />
         <option value="$PROJECT_DIR$/_tests/vpn_check_point.py" />
         <option value="$PROJECT_DIR$/vpn/pulse.py" />
@@ -221,6 +163,12 @@
         <option value="$PROJECT_DIR$/vpn/checkpoint.py" />
         <option value="$PROJECT_DIR$/vpn/webbased.py" />
         <option value="$PROJECT_DIR$/controllers/rdcbased.py" />
+        <option value="$PROJECT_DIR$/to_do.txt" />
+        <option value="$PROJECT_DIR$/vpn/openvpn.py" />
+        <option value="$PROJECT_DIR$/_tests/_vpn_barracuda/barracuda.ini" />
+        <option value="$PROJECT_DIR$/vpn/__init__.py" />
+        <option value="$PROJECT_DIR$/_tests/_vpn_barracuda/_test_vpn_barracuda.py" />
+        <option value="$PROJECT_DIR$/vpn/barracuda.py" />
       </list>
     </option>
   </component>
@@ -247,7 +195,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -258,7 +205,19 @@
             <path>
               <item name="connector" type="b2602c69:ProjectViewProjectNode" />
               <item name="connector" type="462c0819:PsiDirectoryNode" />
-              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="_tests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="connector" type="b2602c69:ProjectViewProjectNode" />
+              <item name="connector" type="462c0819:PsiDirectoryNode" />
+              <item name="_tests" type="462c0819:PsiDirectoryNode" />
+              <item name="_vpn_barracuda" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="connector" type="b2602c69:ProjectViewProjectNode" />
+              <item name="connector" type="462c0819:PsiDirectoryNode" />
+              <item name="_tests" type="462c0819:PsiDirectoryNode" />
+              <item name="_vpn_checkpoint" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="connector" type="b2602c69:ProjectViewProjectNode" />
@@ -269,12 +228,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/_tests/_vpn_checkpoint" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/_tests/_vpn_barracuda" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -283,22 +243,23 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\PyProjects\connector\_tests\_vpn_checkpoint" />
-      <recent name="D:\PyProjects\connector\_tests\_vpn_webbased" />
-      <recent name="D:\PyProjects\connector\vpn" />
-      <recent name="D:\PyProjects\connector\_tests\_openvpn_connector" />
-      <recent name="D:\PyProjects\connector\_tests\_sap_connector" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PyProjects\connector\_tests\_vpn_barracuda" />
       <recent name="D:\PyProjects\connector\_tests\_old" />
       <recent name="D:\PyProjects\connector\_old" />
       <recent name="D:\PyProjects\connectors" />
       <recent name="D:\PyProjects\connectors\connector" />
-      <recent name="D:\PyProjects\connectors\connector\widgets" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\PyProjects\connector\_tests\_vpn_barracuda" />
+      <recent name="D:\PyProjects\connector\_tests\_vpn_checkpoint" />
+      <recent name="D:\PyProjects\connector\_tests\_vpn_webbased" />
+      <recent name="D:\PyProjects\connector\vpn" />
+      <recent name="D:\PyProjects\connector\_tests\_openvpn_connector" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -313,7 +274,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python._test_vpn_checkpoint">
+  <component name="RunManager" selected="Python._test_vpn_barracuda">
+    <configuration name="_test_vpn_barracuda" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="connector" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/_tests/_vpn_barracuda" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_tests/_vpn_barracuda/_test_vpn_barracuda.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="_test_vpn_checkpoint" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="connector" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -327,7 +310,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/_tests/_vpn_checkpoint/_test_vpn_checkpoint.py" />
+      <option name="SCRIPT_NAME" value="D:\PyProjects\connector\_tests\_vpn_barracuda\_test_vpn_barracuda.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -380,28 +363,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="forticlient" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="connector" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/vpn" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/vpn/forticlient.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="test_vpn_webbased.pyw" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="connector" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -426,11 +387,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python._test_vpn_barracuda" />
         <item itemvalue="Python._test_vpn_checkpoint" />
         <item itemvalue="Python.checkpoint" />
         <item itemvalue="Python.test_vpn_webbased.pyw" />
         <item itemvalue="Python._text_pulse.pyw" />
-        <item itemvalue="Python.forticlient" />
       </list>
     </recent_temporary>
   </component>
@@ -507,14 +468,8 @@
       <workItem from="1581211761276" duration="5504000" />
       <workItem from="1581229171016" duration="8431000" />
       <workItem from="1581334594877" duration="1355000" />
-      <workItem from="1581403226982" duration="9079000" />
-    </task>
-    <task id="LOCAL-00011" summary="SAP parent class added to provide possibility&#10;to read connection parameters from SAP GUI Landscape descriptor.">
-      <created>1572764805213</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1572764805213</updated>
+      <workItem from="1581403226982" duration="9120000" />
+      <workItem from="1581751306191" duration="900000" />
     </task>
     <task id="LOCAL-00012" summary="SAP parent class added to provide possibility&#10;to read connection parameters from SAP GUI Landscape descriptor.">
       <created>1572771915681</created>
@@ -852,11 +807,18 @@
       <option name="project" value="LOCAL" />
       <updated>1581319962481</updated>
     </task>
-    <option name="localTasksCounter" value="60" />
+    <task id="LOCAL-00060" summary="refat: VPN major refactoring&#10;fea: checkpoint SSL VPN added">
+      <created>1581419646006</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1581419646006</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="348519000" />
+    <option name="totallyTimeSpent" value="349460000" />
   </component>
   <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
@@ -871,12 +833,12 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.44504505" visible="true" weight="0.10021322" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.44504505" visible="true" weight="0.10127932" />
       <window_info id="Structure" order="1" sideWeight="0.55495495" side_tool="true" weight="0.3944563" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33802816" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.33802816" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39869988" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -1015,6 +977,7 @@
     <SUITE FILE_PATH="coverage/connectors$test_app.coverage" NAME="test_app Coverage Results" MODIFIED="1578722575845" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/connector" />
     <SUITE FILE_PATH="coverage/connector$pulse.coverage" NAME="pulse Coverage Results" MODIFIED="1580916657629" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/vpn" />
     <SUITE FILE_PATH="coverage/connectors$_test_rdc_connector.coverage" NAME="_test_rdc_connector Coverage Results" MODIFIED="1580723450508" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_tests/_rdc_connector" />
+    <SUITE FILE_PATH="coverage/connector$_test_vpn_barracuda.coverage" NAME="_test_vpn_barracuda Coverage Results" MODIFIED="1581752689701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_tests/_vpn_barracuda" />
     <SUITE FILE_PATH="coverage/connectors$scratch_47.coverage" NAME="scratch_47 Coverage Results" MODIFIED="1580184800555" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/connectors$scratch_38.coverage" NAME="scratch_38 Coverage Results" MODIFIED="1576000737302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$APPLICATION_CONFIG_DIR$/scratches" />
     <SUITE FILE_PATH="coverage/connector$test_vpn_webbased_pyw.coverage" NAME="test_vpn_webbased.pyw Coverage Results" MODIFIED="1581237942832" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/_tests/_vpn_webbased" />
@@ -1070,23 +1033,6 @@
     <SUITE FILE_PATH="coverage/connectors$sap.coverage" NAME="sap Coverage Results" MODIFIED="1576569025038" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sap" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/models/rdc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_tests/_sap_connector/_test_sap_connector.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_tests/_openvpn_connector/config.ini">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/sap/sapbase.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -1171,13 +1117,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vpn/cisco.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vpn/desktop.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="291">
@@ -1185,20 +1124,6 @@
           <folding>
             <element signature="e#141#160#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vpn/openvpn.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/to_do.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -1292,16 +1217,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vpn/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/connector.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1381,50 +1296,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/selenium/webdriver/support/wait.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1156">
-          <caret line="70" selection-start-line="70" selection-end-line="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/tkinter/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="28866">
-          <caret line="1701" selection-start-line="1701" selection-end-line="1701" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16099">
-          <caret line="963" selection-start-line="963" selection-end-line="963" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/_tests/_vpn_checkpoint/checkpoint.ini">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vpn/webbased.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-100">
           <caret line="39" column="21" lean-forward="true" selection-start-line="39" selection-start-column="21" selection-end-line="39" selection-end-column="21" />
           <folding>
             <element signature="e#136#155#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vpn/pulse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
-          <folding>
-            <element signature="e#175#197#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1450,6 +1327,96 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/tkinter/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="988">
+          <caret line="1701" selection-start-line="1701" selection-end-line="1701" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/selenium/webdriver/support/wait.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_tests/_vpn_checkpoint/checkpoint.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="28" selection-start-line="1" selection-start-column="28" selection-end-line="1" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="963" selection-start-line="963" selection-end-line="963" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/to_do.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="24" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vpn/pulse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="42" lean-forward="true" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#175#197#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vpn/cisco.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vpn/openvpn.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="71" lean-forward="true" selection-start-line="21" selection-start-column="71" selection-end-line="21" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_tests/_vpn_barracuda/barracuda.ini">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="21" lean-forward="true" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vpn/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_tests/_vpn_barracuda/_test_vpn_barracuda.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="17" lean-forward="true" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vpn/barracuda.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="37" lean-forward="true" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
         </state>
       </provider>
     </entry>

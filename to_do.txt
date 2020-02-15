@@ -12,3 +12,15 @@ TODO: teamviewer - is it poissible to manage logon to remote desktop?
 TODO: add log feature
 TODO: deactivate sap servicde if there's no user/pass provided in config
 TODO: implement "partner not reached"
+TODO: add Barracuda VPN
+-c : Connect
+-d : Disconnect
+-a : Local password
+(-aa : Prompt for local password: automatically ask
+-h : Hide vpn.exe (not visible)
+-n : profile name
+-p : password (server)
+(-pp : Automatic VPN Client password prompt
+-r : Profile (Registry ID)
+-u : User
+
