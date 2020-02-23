@@ -18,10 +18,10 @@ class OpenVPN(Desktop):
     _config = 'openvpn.ini'
 
     @property
-    def connect_command(self):
+    def _connect_command(self):
         return f'"{self._driver}" --connect {getattr(self, "profile")}'
 
     @property
-    def disconnect_command(self):
+    def _disconnect_command(self):
         return ['taskkill.exe /F /IM openvpn.exe',
                 'taskkill.exe /F /IM openvpn-gui.exe']

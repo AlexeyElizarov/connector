@@ -31,9 +31,12 @@ class Barracuda(Desktop):
     _config = 'barracuda.ini'
 
     @property
-    def connect_command(self):
+    def _connect_command(self):
         return f'"{self._driver}" -u {getattr(self, "user")} -p {getattr(self, "password")}'
 
     @property
-    def disconnect_command(self):
+    def _disconnect_command(self):
         return f'"{self._driver}" -d'
+
+    def _update_status(self):
+        print(self.output)

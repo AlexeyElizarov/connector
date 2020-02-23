@@ -1,6 +1,13 @@
 TODO: refact VPN
-    is_connected
-
+    is_connected handling
+    Desktop VPNs:
+        Barracuda
+        Cisco - done
+        OpenVPN
+    Webbased VPNs:
+        Checkpoint
+        Forticlient
+        Pulse
 TODO: minimize to sys tray when connected.
 TODO: account management
 TODO: RM access parsing
