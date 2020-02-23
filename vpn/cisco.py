@@ -18,11 +18,19 @@ class Cisco(Desktop):
     _config = 'cisco.ini'
 
     @property
-    def connect_command(self):
+    def _connect_command(self):
         return f'"{self._driver}" connect {getattr(self, "profile")} '\
             f'user {getattr(self, "user")} ' \
             f'pwd {getattr(self, "pwd")}'
 
     @property
-    def disconnect_command(self):
+    def _disconnect_command(self):
         return f'"{self._driver}" disconnect'
+
+    def _update_status(self):
+        if 'Your VPN connection is secure'.lower() in self.output.lower():
+            self.is_connected = True
+        elif 'A connection already exists'.lower() in self.output.lower():
+            self.is_connected = True
+        else:
+            self.is_connected = False
