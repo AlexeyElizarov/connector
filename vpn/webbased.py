@@ -15,6 +15,7 @@ class WebBased(VPN):
 
     _browser = None
     _webdriver = webdriver.Chrome  # Chrome is webdriver by default
+    # _webdriver = None
     _options = None
     _delay = 60
     is_connected = False

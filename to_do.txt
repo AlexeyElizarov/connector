@@ -9,4 +9,3 @@ TODO: teamviewer - is it poissible to manage logon to remote desktop?
 TODO: add log feature
 TODO: deactivate sap servicde if there's no user/pass provided in config
 TODO: implement "partner not reached"
-

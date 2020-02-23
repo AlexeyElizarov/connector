@@ -72,13 +72,14 @@ class SAPLogon(Controller):
             else:
                 sleep(1)
 
+
+
     def disconnect(self):
         """
         Closes SAP GUI sessions and disconnects from VPN.
         :return: None
         """
 
-        # self.model.status.post('Disconnecting...')
         self.model.status.code *= -1
 
         for i in range(15):
@@ -90,6 +91,7 @@ class SAPLogon(Controller):
             self.model.vpn.disconnect()
         except:
             pass
+
         self.view.controls.btn_disconnect['state'] = 'disabled'
         # self.model.status.post('Disconnected')
         self.model.status.code = -1

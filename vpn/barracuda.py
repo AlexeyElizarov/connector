@@ -24,7 +24,7 @@ from vpn import Desktop
 
 class Barracuda(Desktop):
     """
-    Provides interface to OpenVPN client.
+    Provides interface to Barracuda VPN client.
     """
 
     _driver = r'C:\Program Files\BarracudaNG\vpn.exe'

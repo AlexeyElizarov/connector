@@ -28,8 +28,11 @@ class RDCBased(Controller):
             self.model.vpn.connect()
         except Exception as e:
             print(type(e), e)
-        finally:
+
+        try:
             self.model.rdc.open()
+        except Exception as e:
+            print(type(e), e)
 
     @Controller.switch
     def disconnect(self):
@@ -38,8 +41,13 @@ class RDCBased(Controller):
         :return: None
         """
 
-        self.model.rdc.close()
+        # Try to close RDC
+        try:
+            self.model.rdc.close()
+        except Exception as e:
+            print(type(e), e)
 
+        # Try to disconnect from VPN
         try:
             self.model.vpn.disconnect()
         except Exception as e:

@@ -65,6 +65,9 @@ class FortiClient(WebBased):
         Disconnects from VPN.
         :return: None
         """
-        if self.is_connected:
+        try:
             self._browser.find_element_by_id('vpn-disconnect-button').click()
+        except Exception as e:
+            print(type(e), e)
+
 
