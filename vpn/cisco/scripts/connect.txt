@@ -1,0 +1,1 @@
+{executable} connect {profile} user {user} pwd {pwd}

@@ -1,0 +1,1 @@
+{executable} -u {user} -p {password}

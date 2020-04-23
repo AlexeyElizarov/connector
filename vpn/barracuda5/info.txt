@@ -1,0 +1,2 @@
+The following commands are available for NAC PowerShell for Windows:
+https://campus.barracuda.com/product/networkaccessclient/doc/75696491/nac-powershell-for-windows/

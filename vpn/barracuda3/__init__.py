@@ -1,0 +1,1 @@
+from vpn.barracuda3.controller import Barracuda3

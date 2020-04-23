@@ -12,7 +12,7 @@ from rdc import RDC
 class RDP(RDC):
 
     _driver = 'mstsc.exe'
-    _config = 'rdp.ini'
+    # _config = 'rdp.ini'
 
     @property
     def open_command(self):

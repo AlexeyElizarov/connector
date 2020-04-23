@@ -1,0 +1,4 @@
+$user = "{username}"
+$pass = "{userpassword}" | ConvertTo-SecureString -AsPlainText -Force
+Set-Location -Path "{executable}"
+Connect-VPN -ProfileID {profileid} -ProfileContext Machine -UserName $user -UserPassword $pass
